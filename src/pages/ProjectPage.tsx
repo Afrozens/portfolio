@@ -4,7 +4,7 @@ import { projects } from "@/services";
 const ProjectsPage = () => {
   return (
     <>
-      <section className="min-h-screen w-full bg-[#f4f1de] text-gray-900 p-36 md:p-24">
+      <section className="min-h-screen w-full bg-[#f4f1de] text-gray-900 p-4 md:p-24">
         <h2 className="font-bold text-4xl my-8 text-center text-secundary">
           Projects
         </h2>

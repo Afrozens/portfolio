@@ -8,26 +8,40 @@ type PropsTypes = {
 
 const CardProject = ({ project }: PropsTypes) => {
   return (
-    <div className="max-w-2xl max-h-xl bg-white rounded-3xl shadow-lg transition mb-8">
+    <div className="min-w-48 h-96 bg-white rounded-3xl shadow-lg transition mb-8 relative">
+      <button className="w-16 h-16 absolute left-2 top-2 flex items-center justify-center rounded-3xl bg-slate-100 cursor-pointer hover:scale-110 transition">
+        <a href={project.linkTech} target="_blank" className="">
+          <img
+            src={githubIcon}
+            alt="github icon logotype"
+            className="w-10 h-10"
+          />
+        </a>
+      </button>
       <div className="w-full h-3/4 rounded-t-3xl bg-green-500 flex items-start justify-end">
-      <img src={project.preview} alt={`${project.title } image`} className="w-full h-full object-cover border-t-2 rounded-t-3xl border-t-white object-center"/>
-        
+        <img
+          src={project.preview}
+          alt={`${project.title} image`}
+          className="w-full h-full object-cover border-t-2 rounded-t-3xl border-t-white object-center"
+        />
       </div>
-      <div className="flex justify-around m-5">
+      <div className="flex justify-around items-center m-5">
         <div className="flex flex-col">
-          <p className="text-lg font-semibold">{project.title}</p>
-          <p className="text-sm">1</p>
+          <span className="text-base md:text-lg font-semibold lg:text-xl">
+            {project.title}
+          </span>
         </div>
         <div className="flex flex-col items-center self-end p-4 gap-4">
-        <button className="w-36 h-12 flex bg-slate-100 self-end justify-center items-center gap-2 rounded-lg cursor-pointer hover:scale-110 transition">
-          <img
-            src={deployIcon}
-            alt="arrow right top icon "
-            className="h-8 w-8"
-          />
-          <p>Deploy</p>
-        </button>
-          
+          <button className="w-24 h-8 md:w-36 md:h-12 bg-slate-100 self-end rounded-lg cursor-pointer hover:scale-110 transition">
+            <a href={project.link} target="_blank" className="flex justify-center items-center gap-4">
+            <img
+              src={deployIcon}
+              alt="arrow right top icon "
+              className="w-6 h-6 md:h-8 md:w-8"
+            />
+            <p className="text-sm">Deploy</p>
+            </a>
+          </button>
         </div>
       </div>
     </div>
