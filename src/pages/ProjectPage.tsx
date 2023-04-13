@@ -1,5 +1,6 @@
 import { CardProject } from "@/components";
 import { projects } from "@/services";
+import {motion} from "framer-motion"
 
 const ProjectsPage = () => {
   return (
@@ -8,11 +9,14 @@ const ProjectsPage = () => {
         <h2 className="font-bold text-4xl my-8 text-center text-secundary">
           Projects
         </h2>
-        <div className="grid grid-cols-1 items-center justify-items-center lg:grid-cols-2 sm:gap-2 md:gap-8">
+        <motion.div className="grid grid-cols-1 items-center justify-items-center lg:grid-cols-2 sm:gap-2 md:gap-8"
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration: 0.5}}>
         {projects.map(project => (
           <CardProject project={project} key={project.id}/>
         ))}
-        </div>
+        </motion.div>
       </section>
     </>
   );

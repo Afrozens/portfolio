@@ -1,6 +1,7 @@
 import githubIcon from "@/assets/icons/github.svg";
 import deployIcon from "../assets/icons/deploy.svg";
 import { Project } from "@/interfaces";
+import {motion} from "framer-motion"
 
 type PropsTypes = {
   project: Project;
@@ -8,7 +9,8 @@ type PropsTypes = {
 
 const CardProject = ({ project }: PropsTypes) => {
   return (
-    <div className="min-w-48 h-96 bg-white rounded-3xl shadow-lg transition mb-8 relative">
+    <motion.div className="min-w-48 h-96 bg-white rounded-3xl shadow-lg transition mb-8 relative"
+    whileHover={{ scale: 1.2 }}>
       <button className="w-16 h-16 absolute left-2 top-2 flex items-center justify-center rounded-3xl bg-slate-100 cursor-pointer hover:scale-110 transition">
         <a href={project.linkTech} target="_blank" className="">
           <img
@@ -44,7 +46,7 @@ const CardProject = ({ project }: PropsTypes) => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

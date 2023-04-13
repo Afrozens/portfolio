@@ -99,7 +99,7 @@ const ContactForm = () => {
         </form>
       </div>
       <div className="grow-0 shrink-0 basis-auto w-full flex lg:justify-center lg:items-center lg:w-7/12">
-        <div className="flex lg:flex-wrap">
+        <div className="flex flex-wrap ">
           <div className="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
             <div className="flex items-start">
               <div className="shrink-0">
