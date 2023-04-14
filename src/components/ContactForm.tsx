@@ -1,11 +1,40 @@
-import linkedinIcon from "../assets/icons/linkedin.svg";
-import githubIcon from "../assets/icons/github.svg";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import linkedinIcon from "@/assets/icons/linkedin.svg";
+import githubIcon from "@/assets/icons/github.svg";
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
+  const form = useRef<any>();
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_TEMPLATE_ID,
+          form.current,
+          import.meta.env.VITE_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            toast.success(`${result}, thanks for message!`)
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+  };
+
   return (
     <div className="flex flex-wrap lg:flex-nowrap justify-center">
       <div className="grow-0 shrink-0 basis-auto mb-12 lg:mb-0 w-full lg:w-12/12 px-3 lg:px-6">
-        <form className="bg-white p-8 rounded-3xl shadow-lg">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="bg-white p-8 rounded-3xl shadow-lg"
+        >
           <div className="form-group mb-6">
             <input
               type="text"
@@ -25,6 +54,7 @@ const ContactForm = () => {
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
               id="exampleInput7"
               placeholder="Name"
+              name="user_name"
             />
           </div>
           <div className="form-group mb-6">
@@ -46,6 +76,7 @@ const ContactForm = () => {
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
               id="exampleInput8"
               placeholder="Email address"
+              name="user_email"
             />
           </div>
           <div className="form-group mb-6">
@@ -70,6 +101,7 @@ const ContactForm = () => {
           "
               id="exampleFormControlTextarea13"
               placeholder="Message"
+              name="message"
             />
           </div>
           <div className="form-group form-check text-center mb-6"></div>
@@ -87,9 +119,9 @@ const ContactForm = () => {
           uppercase
           rounded
           shadow-md
-          hover:bg-blue-700 hover:shadow-lg
-          focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-          active:bg-blue-800 active:shadow-lg
+          hover:bg-secundary hover:shadow-lg
+          focus:bg-secundary focus:shadow-lg focus:outline-none focus:ring-0
+          active:bg-secundary active:shadow-lg
           transition
           duration-150
           ease-in-out"

@@ -27,7 +27,7 @@ const AnimatedTextWord = ({ line1, line2 }: PropsType) => {
 
   return (
     <motion.h1
-      className="text-secundary text-4xl font-bold font-inter tracking-widest my-4 lg:text-8xl"
+      className="text-secundary text-5xl font-bold font-inter tracking-widest my-4 lg:text-8xl"
       variants={sentence}
       initial="hidden"
       animate="visible"

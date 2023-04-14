@@ -1,6 +1,6 @@
 import { experiences } from "@/services";
 import { CardExperience, ViewPdf } from "@/components";
-import LinkedinIcon from "../assets/icons/linkedin.svg";
+import LinkedinIcon from "@/assets/icons/linkedin.svg";
 import { useState } from "react";
 import {motion} from "framer-motion"
 
@@ -30,7 +30,7 @@ const AboutPage = () => {
           <span className="text-sm font-light md:text-lg"> CV</span>
         </button>
       </aside>
-      <section className="min-h-screen w-full bg-third flex flex-col items-center p-10 text-primary py-14 px-10 sm:px-20 sm:py-4 sm:flex-row sm:items-start sm:h-[50vh] md:h-[90vh]">
+      <section id="about" className="min-h-[120vh] w-full bg-third flex flex-col items-center p-10 text-primary py-14 px-10 sm:px-20 sm:py-4 sm:flex-row sm:items-start sm:h-[50vh] md:h-[90vh] mb-6">
         <motion.div className="flex w-full h-72 relative mb-4 shrink-0 justify-center sm:w-[33%] sm:flex-col sm:justify-start md:pr-10"
         initial={{ opacity: 0, x: "-100%" }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -77,7 +77,7 @@ const AboutPage = () => {
             Jesus Chacon
           </h2>
           <h3 className="font-semibold text-2xl tracking-widest my-4 md:text-3xl">
-            <b className="text-javascript">Javascript</b> Developer Web
+            <b className="text-javascript">Javascript</b> Web Developer
           </h3>
           <p className="text-sm font-light text-third md:text-lg lg:text-2xl sm:border sm:border-transparent sm:border-b-gray-300 sm:pb-10">
             I'm a client-side web developer, I specialize in Javascript, I have

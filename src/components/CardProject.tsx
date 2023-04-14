@@ -9,8 +9,8 @@ type PropsTypes = {
 
 const CardProject = ({ project }: PropsTypes) => {
   return (
-    <motion.div className="min-w-48 h-96 bg-white rounded-3xl shadow-lg transition mb-8 relative"
-    whileHover={{ scale: 1.2 }}>
+    <motion.div className="min-w-40 h-96 bg-white rounded-3xl shadow-lg transition mb-8 relative"
+    whileHover={{ scale: 1.1 }}>
       <button className="w-16 h-16 absolute left-2 top-2 flex items-center justify-center rounded-3xl bg-slate-100 cursor-pointer hover:scale-110 transition">
         <a href={project.linkTech} target="_blank" className="">
           <img

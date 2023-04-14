@@ -3,7 +3,7 @@ import {motion} from "framer-motion"
 
 const ContactPage = () => {
   return (
-    <article className="min-h-[60vh] w-full p-6 pr-14 flex flex-col items-center bg-secundary md">
+    <article id="contact" className="min-h-[60vh] w-full p-6 pr-14 flex flex-col items-center bg-secundary md">
       <motion.section className="mb-32 text-gray-800"
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}

@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
-    <main className="sm:flex">
-      <section className="h-[80vh] w-full flex flex-col justify-center bg-primary p-16 sm:w-[67%] sm:h-[35vh] md:h-screen">
+    <main id="#" className="sm:flex">
+      <section className="h-[80vh] w-full flex flex-col justify-center bg-primary p-16 sm:w-[67%] sm:h-[40vh] lg:h-screen">
         <div className="sm:pt-8 w-full ">
           <AnimatedWords line1="Frontend" line2="Developer" />
           <motion.p
@@ -17,7 +17,7 @@ const HomePage = () => {
           </motion.p>
         </div>
       </section>
-      <section className="h-[40vh] w-full flex flex-col items-center justify-center bg-secundary sm:w-[33%] sm:h-[35vh] md:h-screen sm:items-start"></section>
+      <section className="h-[40vh] w-full flex flex-col items-center justify-center bg-secundary sm:w-[33%] sm:h-[40vh] lg:h-screen sm:items-start"></section>
     </main>
   );
 };
