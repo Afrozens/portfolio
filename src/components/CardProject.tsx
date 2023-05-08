@@ -2,14 +2,23 @@ import githubIcon from "@/assets/icons/github.svg";
 import deployIcon from "../assets/icons/deploy.svg";
 import { Project } from "@/interfaces";
 import {motion} from "framer-motion"
+import { useState } from "react";
 
 type PropsTypes = {
   project: Project;
 };
 
 const CardProject = ({ project }: PropsTypes) => {
+  const [imageLoading, setImageLoading] = useState(true);
+  const [pulsing, setPulsing] = useState(true);
+
+  const imageLoaded = () => {
+    setImageLoading(false);
+    setTimeout(() => setPulsing(false), 600);
+  };
+
   return (
-    <motion.div className="min-w-40 h-96 bg-white rounded-3xl shadow-lg transition mb-8 relative"
+    <motion.div className="w-80 md:w-[550px] h-80 md:h-[500px] bg-white rounded-3xl shadow-lg transition mb-8 relative"
     whileHover={{ scale: 1.1 }}>
       <button className="w-16 h-16 absolute left-2 top-2 flex items-center justify-center rounded-3xl bg-slate-100 cursor-pointer hover:scale-110 transition">
         <a href={project.linkTech} target="_blank" className="">
@@ -20,11 +29,16 @@ const CardProject = ({ project }: PropsTypes) => {
           />
         </a>
       </button>
-      <div className="w-full h-3/4 rounded-t-3xl bg-green-500 flex items-start justify-end">
-        <img
+      <div className="w-full h-3/4 rounded-t-3xl bg-transparent flex items-start justify-end">
+        <motion.img
           src={project.preview}
           alt={`${project.title} image`}
-          className="w-full h-full object-cover border-t-2 rounded-t-3xl border-t-white object-center"
+          className="w-full h-full object-cover border-t-2 rounded-t-3xl border-t-white"
+      animate={{
+        opacity: imageLoading ? 0 : 1,
+      }}
+      transition={{ opacity: { delay: 0.5, duration: 0.4 } }}
+      onLoad={imageLoaded}
         />
       </div>
       <div className="flex justify-around items-center m-5">

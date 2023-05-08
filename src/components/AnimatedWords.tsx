@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 type PropsType = {
   line1: string;
   line2?: string;
+  line3?: string;
+  classText: string
 };
 
-const AnimatedTextWord = ({ line1, line2 }: PropsType) => {
+const AnimatedTextWord = ({ line1, line2, line3, classText }: PropsType) => {
   const sentence = {
     hidden: { opacity: 1 },
     visible: {
@@ -27,7 +29,7 @@ const AnimatedTextWord = ({ line1, line2 }: PropsType) => {
 
   return (
     <motion.h1
-      className="text-secundary text-5xl font-bold font-inter tracking-widest my-4 lg:text-8xl"
+      className={`${classText} font-bold font-inter tracking-widest`}
       variants={sentence}
       initial="hidden"
       animate="visible"
@@ -39,6 +41,12 @@ const AnimatedTextWord = ({ line1, line2 }: PropsType) => {
       ))}
       <br />
       {line2 && line2.split("").map((char, index) => (
+        <motion.span key={`${char}-${index}`} variants={letter}>
+          {char}
+        </motion.span>
+      ))}
+      <br />
+      {line3 && line3.split("").map((char, index) => (
         <motion.span key={`${char}-${index}`} variants={letter}>
           {char}
         </motion.span>
