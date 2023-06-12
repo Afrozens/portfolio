@@ -32,6 +32,7 @@ const AnimatedTextWord = ({ line1, line2, line3, classText }: PropsType) => {
       className={`${classText} font-bold font-inter tracking-widest`}
       variants={sentence}
       initial="hidden"
+      viewport={{once: true, amount: 0.8}}
       animate="visible"
     >
       {line1.split("").map((char, index) => (

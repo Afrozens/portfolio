@@ -12,6 +12,11 @@ export default {
         secundary: "#7AE582",
         third: "#f4f1de"
       },
+      colors: {
+        primary: "#00A5CF",
+        secundary: "#7AE582",
+        third: "#f4f1de"
+      },
       textColor: {
         primary: "#00A5CF",
         secundary: "#7AE582",

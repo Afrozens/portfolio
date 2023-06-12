@@ -3,8 +3,8 @@ import githubIcon from "@/assets/icons/github.svg";
 
 const Contact = () => {
   return (
-    <div className="flex flex-wrap md:flex-nowrap justify-center">
-      <div className="flex flex-wrap ">
+    <section className="flex flex-wrap md:flex-nowrap justify-center">
+      <article className="flex flex-wrap ">
         <div className="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 md:px-6">
           <div className="flex items-start">
             <div className="shrink-0">
@@ -46,8 +46,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 

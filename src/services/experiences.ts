@@ -4,6 +4,13 @@ import { Experience } from "@/interfaces/Experience";
 export const experiences: Experience[] = [
   {
     id: uuid(),
+    title: "Autonomous Frontend - No Country",
+    date: "2023 Apr - 2023 Jun",
+    description:
+      "Development of the main logic on the Client side, plus Redux integrations, troubleshooting, integration of Server Side Rendering with Next, creation of Typescript models representative of the business logic, integration of fetching in server components and layout and implementation of the component logic.",
+  },
+  {
+    id: uuid(),
     title: "Freelancer Frontend",
     date: "2023 Apr - Present",
     description:

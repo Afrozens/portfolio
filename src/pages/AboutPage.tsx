@@ -31,7 +31,7 @@ const AboutPage = () => {
         </button>
       </aside>
       <section id="about" className="min-h-[130vh] w-full bg-third flex flex-col items-center p-10 text-primary py-14 px-10 sm:px-20 sm:py-4 sm:flex-row sm:items-start sm:h-[50vh] md:h-[90vh] mb-6 overflow-hidden gap-10 md:gap-0">
-        <motion.div className="flex w-full h-72 relative mb-4 shrink-0 justify-center sm:w-[33%] sm:flex-col sm:justify-start md:pr-10"
+        <motion.div className="flex w-full relative mb-4 shrink-0 justify-center sm:w-[33%] sm:flex-col sm:justify-start md:pr-10"
         initial={{ opacity: 0, x: "-100%" }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{duration: 0.5, delay: 0.5}}
@@ -47,6 +47,9 @@ const AboutPage = () => {
               <li>Nodejs</li>
               <li>React</li>
               <li>Nextjs</li>
+              <li>FastApi</li>
+              <li>SQLAlchemy</li>
+              <li>SQL</li>
               <li>Redux TLK</li>
               <li>Tanstack Query</li>
               <li>Tailwind</li>
@@ -60,27 +63,25 @@ const AboutPage = () => {
             <ul className="flex flex-wrap flex-col gap-2 pt-2 text-third font-light text-sm list-disc list-inside md:text-lg">
               <li>Responsive web design</li>
               <li>Jest - Vitest</li>
-              <li>Github</li>
               <li>Git</li>
               <li>Scrum</li>
               <li>Wordpress</li>
             </ul>
           </article>
         </motion.div>
-
         <div className="sm:w-[67%]">
           <motion.div
           initial={{opacity: 0, y: "-50%"}}
           whileInView={{opacity: 1, y: 0}}
           transition={{duration: 0.5}}>
           <h2 className="font-bold text-7xl tracking-[-0.3rem] lg:text-8xl pt-4">
-            Jesus Chacon
+            Jesús Chacón
           </h2>
           <h3 className="font-semibold text-2xl tracking-widest my-4 md:text-3xl">
-            <b className="text-javascript">Javascript</b> Web Developer
+            <b className="text-javascript">Javascript</b> and <b className="text-[#019486]">FastApi</b> Web Developer
           </h3>
           <p className="text-sm font-light text-third md:text-lg lg:text-2xl sm:border sm:border-transparent sm:border-b-gray-300 sm:pb-10">
-          I am a client-side web developer specializing in JavaScript, with three years of expertise in the programming language and one year of professional experience. I consider myself a passionate learner with strong communication skills.
+          I am a web developer specializing in FastApi and JavaScript, with three years of expertise in the programming language [JS] and one year of professional experience. I consider myself a passionate learner with strong communication skills.
           </p>
           </motion.div>
           <article>
