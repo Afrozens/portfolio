@@ -1,5 +1,5 @@
 import githubIcon from "@/assets/icons/github.svg";
-import deployIcon from "../assets/icons/deploy.svg";
+import deployIcon from "../../assets/icons/deploy.svg";
 import { Project } from "@/interfaces";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -17,7 +17,7 @@ const CardProject = ({ project }: PropsTypes) => {
 
   return (
     <motion.div
-      className="w-80 md:w-[550px] h-80 md:h-[500px] bg-white rounded-3xl shadow-lg transition mb-8 relative scale-90"
+      className="w-80 md:w-[550px]  md:h-[500px] bg-white rounded-3xl shadow-lg transition mb-8 relative scale-90"
       whileHover={{ scale: 1.05 }}
     >
       <button className="w-16 h-16 absolute left-2 top-2 flex items-center justify-center rounded-3xl bg-slate-100 cursor-pointer hover:scale-110 transition">

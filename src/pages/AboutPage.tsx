@@ -2,7 +2,7 @@ import { experiences } from "@/services";
 import { CardExperience, ViewPdf } from "@/components";
 import LinkedinIcon from "@/assets/icons/linkedin.svg";
 import { useState } from "react";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 const AboutPage = () => {
   const [isViewPdf, setIsViewPdf] = useState<boolean>(false);
@@ -30,30 +30,37 @@ const AboutPage = () => {
           <span className="text-sm font-light md:text-lg"> CV</span>
         </button>
       </aside>
-      <section id="about" className="min-h-[130vh] w-full bg-third flex flex-col items-center p-10 text-primary py-14 px-10 sm:px-20 sm:py-4 sm:flex-row sm:items-start sm:h-[50vh] md:h-[90vh] mb-6 overflow-hidden gap-10 md:gap-0">
-        <motion.div className="flex w-full relative mb-4 shrink-0 justify-center sm:w-[33%] sm:flex-col sm:justify-start md:pr-10"
-        initial={{ opacity: 0, x: "-100%" }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{duration: 0.5, delay: 0.5}}
+      <section
+        id="about"
+        className=" w-full bg-third flex flex-col items-center p-10 text-primary py-14 px-10 sm:px-20 sm:py-4 sm:flex-row sm:items-start  mb-6 overflow-hidden gap-10 md:gap-0"
+      >
+        <motion.div
+          className="flex w-full relative mb-4 shrink-0 justify-center sm:w-[33%] sm:flex-col sm:justify-start md:pr-10"
+          initial={{ opacity: 0, x: "-100%" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
         >
           <article>
             <h3 className="font-bold text-lg pb-2 border border-transparent border-b-slate-300 inline-block md:text-2xl">
               Technologies:
             </h3>
-            <ul className="flex flex-wrap flex-col gap-2 pt-2 text-third font-light text-sm list-disc list-inside md:text-lg">
+            <ul className="whitespace-pre flex flex-wrap flex-col gap-2 pt-2 text-third font-light text-sm list-disc list-inside md:text-lg">
               <li>Javascript</li>
               <li>Typescript</li>
               <li>Python</li>
+              <li>PHP</li>
+              <li>Vue</li>
               <li>Nodejs</li>
               <li>React</li>
               <li>Nextjs</li>
+              <li>Laravel</li>
               <li>FastApi</li>
-              <li>SQLAlchemy</li>
+              <li>Sockets</li>
+              <li>Inertia</li>
               <li>SQL</li>
-              <li>Redux TLK</li>
-              <li>Tanstack Query</li>
               <li>Tailwind</li>
               <li>Styled Component</li>
+              <li>Gsap & Framer Motion</li>
             </ul>
           </article>
           <article className="ml-4 sm:ml-0 sm:mt-4">
@@ -71,26 +78,34 @@ const AboutPage = () => {
         </motion.div>
         <div className="sm:w-[67%]">
           <motion.div
-          initial={{opacity: 0, y: "-50%"}}
-          whileInView={{opacity: 1, y: 0}}
-          transition={{duration: 0.5}}>
-          <h2 className="font-bold text-7xl tracking-[-0.3rem] lg:text-8xl pt-4">
-            Jesús Chacón
-          </h2>
-          <h3 className="font-semibold text-2xl tracking-widest my-4 md:text-3xl">
-            <b className="text-javascript">Javascript</b> and <b className="text-[#019486]">FastApi</b> Web Developer
-          </h3>
-          <p className="text-sm font-light text-third md:text-lg lg:text-2xl sm:border sm:border-transparent sm:border-b-gray-300 sm:pb-10">
-          I am a web developer specializing in FastApi and JavaScript, with three years of expertise in the programming language [JS] and one year of professional experience. I consider myself a passionate learner with strong communication skills.
-          </p>
+            initial={{ opacity: 0, y: "-50%" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="font-bold text-7xl tracking-[-0.3rem] lg:text-8xl pt-4">
+              Jesús Chacón
+            </h2>
+            <h3 className="font-semibold text-2xl tracking-widest my-4 md:text-3xl">
+              <b className="text-javascript">Javascript</b>
+              <b className="text-[#00008B]"> Python</b> and{" "}
+              <b className="text-[#7A86B8]">PHP</b> Developer
+            </h3>
+            <p className="text-sm font-light text-third md:text-lg lg:text-2xl sm:border sm:border-transparent sm:border-b-gray-300 sm:pb-10">
+              Web developer with more than a year and a half of experience in
+              React, Next.js, Vue, Laravel, TypeScript, Python and FastAPI.
+              Passionate about project architecture and structure, with emphasis
+              on solid foundations and best practices for consistency. Frontend
+              and backend experience.
+            </p>
           </motion.div>
           <article>
             <h2 className="text-3xl font-bold py-10 lg:text-4xl">Experience</h2>
             <motion.ul
-            className="flex flex-col gap-10 md:gap-0"
-            initial={{opacity: 0, x: "50%"}}
-            whileInView={{opacity: 1, x: 0}}
-            transition={{duration: 0.5, delay: 0.2}}>
+              className="flex flex-col items-center md:gap-0"
+              initial={{ opacity: 0, x: "50%" }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               {experiences.map((experience) => (
                 <CardExperience experience={experience} key={experience.id} />
               ))}

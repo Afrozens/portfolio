@@ -16,7 +16,7 @@ const ProjectsPage = () => {
           Recent Projects
         </h2>
         <motion.div
-          className="grid grid-cols-1 items-center justify-center lg:grid-cols-2 md:gap-8 lg:gap-24 "
+          className="grid grid-cols-1 place-items-center items-center justify-center lg:grid-cols-2 md:gap-8 lg:gap-24 "
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, scale: 0.9 }}
           transition={{ duration: 0.5 }}

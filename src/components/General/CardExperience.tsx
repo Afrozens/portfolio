@@ -6,7 +6,7 @@ type PropsType = {
 
 const CardExperience = ({ experience }: PropsType) => {
   return (
-    <div className="h-48 w-full mb-12 ">
+    <div className="w-full mb-12 ">
       <div className="flex flex-col sm:justify-between px-2 pb-4 sm:flex-row">
         <h3 className="text-lg text-third font-semibold underline md:text-xl">
           {experience.title}
