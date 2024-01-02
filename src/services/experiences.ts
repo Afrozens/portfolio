@@ -4,8 +4,22 @@ import { Experience } from "@/interfaces/Experience";
 export const experiences: Experience[] = [
   {
     id: uuid(),
+    title: "Independent Web Developer - Avoxus",
+    date: "2023 Dec - Current",
+    description:
+      "Development of a web application with multi-step, role management, authentication and authorization, use of stripe API, and business logic development. handling management of LLC company creation. Both Frontend and Backend.",
+  },
+  {
+    id: uuid(),
+    title: "Independent Web Developer - Es Mediterraneo",
+    date: "2023 Nov - 2024 Jan",
+    description:
+      "Redesigning the Frontend from scratch of an existing application with administrative panel and user dashboard, and refactor the backend, upgrade to a stable version, stable in both Vue (from Vue 2 to Vue 3) and Laravel (from Laravel 8 to Laravel 10) and inertia.",
+  },
+  {
+    id: uuid(),
     title: "Web Developer - Novadeha SAS",
-    date: "2023 Jun - 2023 Nov [current]",
+    date: "2023 Jun - 2023 Dec",
     description:
       "Refactored and scaled frontend architecture of complex app. Designed and implemented performance, scalability and maintainability improvements. Refactored vanilla JavaScript frontend applying SOLID principles and design patterns to improve code quality. Led Vue.js frontend project defining full architecture and establishing module development guidelines using best practices. In charge of preventive and corrective maintenance, integration of dynamic and reusable components in Laravel/Vue.js frontend with Inertia.js. Experienced in refactoring, scaling and optimizing frontend architecture using Vue, JavaScript and design patterns.",
   },

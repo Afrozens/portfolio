@@ -59,8 +59,10 @@ const AboutPage = () => {
               <li>Inertia</li>
               <li>SQL</li>
               <li>Tailwind</li>
-              <li>Styled Component</li>
               <li>Gsap & Framer Motion</li>
+              <li>DDD Arquitecture</li>
+              <li>TDD</li>
+              <li>Clean Arquitecture</li>
             </ul>
           </article>
           <article className="ml-4 sm:ml-0 sm:mt-4">
@@ -91,11 +93,11 @@ const AboutPage = () => {
               <b className="text-[#7A86B8]">PHP</b> Developer
             </h3>
             <p className="text-sm font-light text-third md:text-lg lg:text-2xl sm:border sm:border-transparent sm:border-b-gray-300 sm:pb-10">
-              Web developer with more than a year and a half of experience in
-              React, Next.js, Vue, Laravel, TypeScript, Python and FastAPI.
-              Passionate about project architecture and structure, with emphasis
-              on solid foundations and best practices for consistency. Frontend
-              and backend experience.
+              Web developer with two years of experience in Javascript, Python,
+              PHP especially in: React, Next.js, Vue, Laravel, TypeScript, and
+              FastAPI. Passionate about architecture, design patterns and
+              project structure, with emphasis on solid foundations and best
+              practices for consistency. Frontend and backend.
             </p>
           </motion.div>
           <article>
