@@ -1,5 +1,3 @@
-import Pdf from "@/assets/Jesus Chacon.pdf";
-
 type PropsType = {
   isViewPdf: boolean;
   setIsViewPdf: React.Dispatch<React.SetStateAction<boolean>>;
@@ -9,8 +7,7 @@ const ViewPdf = ({ isViewPdf, setIsViewPdf }: PropsType) => {
   return (
     <>
       <iframe
-        src={Pdf}
-        frameBorder="0"
+        src="Jesus-Chacon.pdf"
         className=" w-full h-full fixed left-0 bottom-0 z-[99]"
       />
       <button

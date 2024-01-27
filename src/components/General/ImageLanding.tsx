@@ -1,6 +1,5 @@
-import { motion } from "framer-motion";
-import LandingImage from "../../assets/landing-image.png";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const ImageLanding = () => {
   const [imageLoading, setImageLoading] = useState(true);
@@ -13,7 +12,7 @@ const ImageLanding = () => {
 
   return (
     <motion.img
-      src={LandingImage}
+      src="landing-image.png"
       alt="laptop with flowers ilustration"
       className="lg:w-[900px] object-cover "
       initial={{ height: "100px", opacity: 0 }}

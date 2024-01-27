@@ -1,6 +1,6 @@
+import { motion } from "framer-motion";
 import { CardProject } from "@/components";
 import { projects } from "@/services";
-import { motion } from "framer-motion";
 
 const ProjectsPage = () => {
   return (
@@ -12,11 +12,11 @@ const ProjectsPage = () => {
         <h3 className="font-bold text-3xl mb-12 text-center text-secundary underline decoration-primary">
           Work
         </h3>
-        <h2 className="font-bold text-6xl mb-12 text-center text-secundary ">
+        <h2 className="-mb-48 font-bold text-6xl md:-mb-36 text-center text-secundary ">
           Recent Projects
         </h2>
-        <motion.div
-          className="grid grid-cols-1 place-items-center items-center justify-center lg:grid-cols-2 md:gap-8 lg:gap-24 "
+        <motion.ul
+          className="flex flex-wrap w-full gap-4 md:gap-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, scale: 0.9 }}
           transition={{ duration: 0.5 }}
@@ -24,7 +24,7 @@ const ProjectsPage = () => {
           {projects.map((project) => (
             <CardProject project={project} key={project.id} />
           ))}
-        </motion.div>
+        </motion.ul>
       </section>
     </>
   );

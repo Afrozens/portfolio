@@ -56,3 +56,8 @@
   z-index: 9999;
   width: 40%;
 }
+
+/* zoom */
+.medium-zoom-image--opened {
+  border-radius: 0px !important;
+}

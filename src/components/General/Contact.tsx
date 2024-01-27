@@ -1,6 +1,3 @@
-import linkedinIcon from "@/assets/icons/linkedin.svg";
-import githubIcon from "@/assets/icons/github.svg";
-
 const Contact = () => {
   return (
     <section className="flex flex-wrap md:flex-nowrap justify-center">
@@ -9,16 +6,7 @@ const Contact = () => {
           <div className="flex items-start">
             <div className="shrink-0">
               <button className="p-4 bg-white rounded-md shadow-md w-14 h-14 flex items-center justify-center hover:scale-110 transition">
-                <a
-                  href="https://www.linkedin.com/in/jesus-chacon-b54b4a223/"
-                  target="_blank"
-                >
-                  <img
-                    src={linkedinIcon}
-                    alt="linkedin icon logotype"
-                    className="w-16 h-16"
-                  />
-                </a>
+                <a href="" target="_blank"></a>
               </button>
             </div>
             <div className="grow ml-6">
@@ -31,13 +19,7 @@ const Contact = () => {
           <div className="flex align-start">
             <div className="shrink-0">
               <button className="p-4 bg-white rounded-md shadow-md w-14 h-14 flex items-center justify-center hover:scale-110 transition">
-                <a href="https://github.com/Afrozens" target="_blank">
-                  <img
-                    src={githubIcon}
-                    alt="github icon logotype"
-                    className="w-16 h-16"
-                  />
-                </a>
+                <a href="" target="_blank"></a>
               </button>
             </div>
             <div className="grow ml-6">

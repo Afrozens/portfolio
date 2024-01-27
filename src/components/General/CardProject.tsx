@@ -1,8 +1,10 @@
-import githubIcon from "@/assets/icons/github.svg";
-import deployIcon from "../../assets/icons/deploy.svg";
-import { Project } from "@/interfaces";
-import { motion } from "framer-motion";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { v4 as uuid } from "uuid";
+import deployIcon from "@/assets/icons/deploy.svg";
+import { Project } from "@/interfaces";
+import SelectTech from "./SelectTech";
+import { ImageZoom } from "./ImageZoom";
 
 type PropsTypes = {
   project: Project;
@@ -16,58 +18,43 @@ const CardProject = ({ project }: PropsTypes) => {
   };
 
   return (
-    <motion.div
-      className="w-80 md:w-[550px]  md:h-[500px] bg-white rounded-3xl shadow-lg transition mb-8 relative scale-90"
-      whileHover={{ scale: 1.05 }}
-    >
-      <button className="w-16 h-16 absolute left-2 top-2 flex items-center justify-center rounded-3xl bg-slate-100 cursor-pointer hover:scale-110 transition">
-        <a href={project.linkTech} target="_blank" className="">
-          <img
-            src={githubIcon}
-            alt="github icon logotype"
-            className="w-10 h-10"
-          />
-        </a>
-      </button>
-      <div className="w-full h-3/4 rounded-t-3xl bg-transparent flex items-start justify-end">
-        <motion.img
+    <li className="w-full h-full flex flex-col justify-center items-center md:flex-row md:gap-10 md:h-96">
+      <div className="w-full h-3/4 bg-transparent flex items-start justify-end md:h-full">
+        <ImageZoom
           src={project.preview}
           alt={`${project.title} image`}
-          className="w-full h-full object-cover border-t-2 rounded-t-3xl border-t-white"
-          animate={{
-            opacity: imageLoading ? 0 : 1,
-          }}
-          transition={{ opacity: { delay: 0.5, duration: 0.4 } }}
+          className="w-full h-full object-cover object-center rounded-lg "
           onLoad={imageLoaded}
         />
       </div>
-      <div className="flex justify-around items-center m-5">
-        <div className="flex flex-col">
-          <span className="text-base md:text-lg font-semibold lg:text-xl">
-            {project.title}
-          </span>
-          <span className="text-xs md:text-md font-semibold lg:text-base">
-            {project.subTitle}
-          </span>
+      <div className="flex justify-around items-center md:items-start m-5 w-full flex-col">
+        <span className="my-2 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl text-center md:text-start">
+          {project.title}
+        </span>
+        <div className="flex my-2 justify-center w-full flex-wrap gap-2 items-center md:items-start md:justify-start md:gap-6">
+          {project.stack.map((tech) => (
+            <SelectTech stack={tech} key={uuid()} />
+          ))}
         </div>
-        <div className="flex flex-col items-center self-end p-4 gap-4">
-          <button className="w-24 h-8 md:w-36 md:h-12 bg-slate-100 self-end rounded-lg cursor-pointer hover:scale-110 transition">
-            <a
-              href={project.link}
-              target="_blank"
-              className="flex justify-center items-center gap-4"
-            >
-              <img
-                src={deployIcon}
-                alt="arrow right top icon "
-                className="w-6 h-6 md:h-8 md:w-8"
-              />
-              <p className="text-sm">Deploy</p>
-            </a>
-          </button>
-        </div>
+        <span className="text-md font-semibold opacity-80 lg:text-base text-center md:text-start md:mb-2">
+          {project.subTitle}
+        </span>
+        <button className="w-48 h-10 mt-2 md:w-36 md:h-12 bg-secundary font-semibold text-lg rounded-lg cursor-pointer hover:scale-110 transition">
+          <a
+            href={project.link}
+            target="_blank"
+            className="flex justify-center items-center gap-4"
+          >
+            <p>Deploy</p>
+            <img
+              src={deployIcon}
+              alt="arrow right top icon "
+              className="w-4 h-4 md:h-8 md:w-8 "
+            />
+          </a>
+        </button>
       </div>
-    </motion.div>
+    </li>
   );
 };
 
