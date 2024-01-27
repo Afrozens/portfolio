@@ -1,7 +1,7 @@
 import { AnimatedWords, ImageLanding } from "@/components";
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import ArrowScroll from "@/assets/icons/arrow-scroll.svg";
-import { Link } from "react-scroll";
 
 const HomePage = () => {
   return (

@@ -7,7 +7,7 @@ interface Props {
 
 const MenuHamburguer = ({ isChecked, setIsChecked }: Props) => {
   return (
-    <label className=" hamburguer-label" htmlFor="check">
+    <label className=" hamburguer-label z-[999999]" htmlFor="check">
       <input
         type="checkbox"
         id="check"

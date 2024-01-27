@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <motion.header
-      className="h-32 w-full absolute flex items-center justify-between sm:bg-transparent sm:h-28 px-8 z-[99]"
+      className="h-32 absolute w-full flex items-center justify-between sm:bg-transparent sm:h-28 px-4 z-[999999]"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.7 }}
