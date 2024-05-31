@@ -47,10 +47,10 @@ const AboutPage = () => {
             <ul className="whitespace-pre flex flex-wrap flex-col gap-2 pt-2 text-third font-light text-sm list-disc list-inside md:text-lg">
               <li>Javascript</li>
               <li>Typescript</li>
+              <li>Nodejs</li>
               <li>Python</li>
               <li>PHP</li>
               <li>Vue</li>
-              <li>Nodejs</li>
               <li>React</li>
               <li>Nextjs</li>
               <li>Laravel</li>
@@ -60,9 +60,7 @@ const AboutPage = () => {
               <li>SQL</li>
               <li>Tailwind</li>
               <li>Gsap & Framer Motion</li>
-              <li>DDD Arquitecture</li>
-              <li>TDD</li>
-              <li>Clean Arquitecture</li>
+              <li>Patterns Arquitectures</li>
             </ul>
           </article>
           <article className="ml-4 sm:ml-0 sm:mt-4">
@@ -71,9 +69,8 @@ const AboutPage = () => {
             </h3>
             <ul className="flex flex-wrap flex-col gap-2 pt-2 text-third font-light text-sm list-disc list-inside md:text-lg">
               <li>Responsive web design</li>
-              <li>Jest - Vitest</li>
+              <li>Testing</li>
               <li>Git</li>
-              <li>Scrum</li>
               <li>Wordpress</li>
             </ul>
           </article>

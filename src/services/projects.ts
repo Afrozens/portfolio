@@ -4,10 +4,45 @@ import { v4 as uuid } from "uuid";
 export const projects: Project[] = [
   {
     id: uuid(),
+    title: "Aplication for travels",
+    subTitle:
+    "Development of frontend and backend business logic, role management, JWT based authentication, administrative and management system for agencies, travel contact interfaces for users and administrative system for super users, stripe management, handling of various rendering patterns and design for smooth operation with Clean Arquitecture.",
+    link: "#",
+    stack: [
+      "python",
+      "javascript",
+      "mysql",
+      "typescript",
+      "react",
+      "next",
+      "fastapi",
+    ],
+    preview: "https://i.imgur.com/Cljs1Rs.png",
+  },
+  {
+    id: uuid(),
+    title: "Application for the control, monitoring and organization of companies",
+    subTitle:
+      "Development of frontend and backend business logic (microservices), role management, JWT based authentication, administrative and management system for companies as well as branches and divisions of the companies. Payment management, integration of employee task monitoring and control system, handling of various rendering patterns and design for smooth operation with Clean Arquitecture.", 
+    link: "https://app.taskr.cl/",
+    stack: [
+      "python",
+      "javascript",
+      "postgresql",
+      "typescript",
+      "rabbitMQ",
+      "vue",
+      "nuxt",
+      "fastapi",
+    ],
+    preview: "https://i.imgur.com/nBPVeUX.png",
+  },
+  {
+    id: uuid(),
     title: "Dashboard and aplication for creation of companies LLC",
     subTitle:
       "Development of frontend and backend business logic, role management, JWT-based authentication, multi-pass registration and stripe management, handling various rendering and design patterns for smooth operation with Clean Arquitecture in mind.",
-    link: "#",
+    link: "https://dashboard.avoxus.com/",
     stack: [
       "python",
       "javascript",
@@ -24,7 +59,7 @@ export const projects: Project[] = [
     title: "Dashboard and aplication for handling food recipe",
     subTitle:
       "Total refactoring from Vue 2 and Laravel 8 to Vue 3 and Laravel 10, change from Vuetify to components from scratch, changes in structuring in both backend and frontend; separation of view logic, with business logic and view in frontend and improved UX",
-    link: "https://pruebas03.esmediterraneo.es/",
+    link: "https://pruebas03.esmediterraneo.es/login",
     stack: ["javascript", "mysql", "typescript", "laravel", "vue", "inertia"],
     preview: "https://i.imgur.com/xSYNJ2u.png",
   },
@@ -72,14 +107,5 @@ export const projects: Project[] = [
     link: "https://jesus-chacon-maquetador-26.vercel.app/",
     stack: ["javascript", "react"],
     preview: "https://i.imgur.com/yTLYQdk.png",
-  },
-  {
-    id: uuid(),
-    title: "Likes mobile",
-    subTitle:
-      "Technical test with the use of styled component and focusing on the 'Container/Presentational' design pattern and the use of Firebase ",
-    link: "https://freelancer-ricky-monday.vercel.app",
-    stack: ["javascript", "react", "firebase"],
-    preview: "https://i.imgur.com/dSmhT8P.png",
   },
 ];

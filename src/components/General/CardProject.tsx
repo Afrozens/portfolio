@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { v4 as uuid } from "uuid";
 import deployIcon from "@/assets/icons/deploy.svg";
 import { Project } from "@/interfaces";
 import SelectTech from "./SelectTech";
-import { ImageZoom } from "./ImageZoom";
+import { Image } from 'antd';
 
 type PropsTypes = {
   project: Project;
@@ -18,9 +17,9 @@ const CardProject = ({ project }: PropsTypes) => {
   };
 
   return (
-    <li className="w-full h-full flex flex-col justify-center items-center md:flex-row md:gap-10 md:h-96">
+    <li className="w-full h-full mt-4 flex flex-col justify-center items-center md:flex-row md:gap-10 md:h-96">
       <div className="w-full h-3/4 bg-transparent flex items-start justify-end md:h-full">
-        <ImageZoom
+        <Image
           src={project.preview}
           alt={`${project.title} image`}
           className="w-full h-full object-cover object-center rounded-lg "

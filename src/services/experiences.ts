@@ -4,8 +4,26 @@ import { Experience } from "@/interfaces/Experience";
 export const experiences: Experience[] = [
   {
     id: uuid(),
+    title: 'Software Developer - Simplified Practice',
+    date: '2024 May - Current',
+    description: 'Maintenance, refactoring and development of software products both Frontend and Backend.'
+  },
+  {
+    id: uuid(),
+    title: 'Software Developer - MOA Travel',
+    date: '2024 Mar - Current',
+    description: 'Development of a web application for the management of agencies and users for the contracting of trips and activities, in addition to the logic of the operation in the administrative part for the management and control of the users/agencies.'
+  },
+  {
+    id: uuid(),
+    title: 'Software Developer - NextStation',
+    date: '2024 Mar - 2024 May',
+    description: 'Development of an application for the management of entities in addition to the control, monitoring and work behavior. Development with FastApi and PostgreSQL on the server side, in addition to the use of RabbitMQ as message broker for the communication of micro services, Development with Typescript, Vue and Nuxt for the client side.'
+  },
+  {
+    id: uuid(),
     title: "Independent Web Developer - Avoxus",
-    date: "2023 Dec - Current",
+    date: "2023 Dec - 2024 Mar",
     description:
       "Development of a web application with multi-step, role management, authentication and authorization, use of stripe API, and business logic development. handling management of LLC company creation. Both Frontend and Backend.",
   },

@@ -14,6 +14,9 @@ const SelectTech = ({ stack }: { stack: typeStack }) => {
     laravel: "/tech/laravel.png",
     inertia: "/tech/inertia.png",
     firebase: "/tech/firebase.png",
+    nuxt: "/tech/nuxt.png",
+    postgresql: "/tech/postgresql.png",
+    rabbitMQ: "/tech/rabbitMQ.png"
   };
   return (
     <div className="w-10 h-10 ">

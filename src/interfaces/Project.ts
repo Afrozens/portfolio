@@ -3,13 +3,16 @@ export type typeStack =
   | "typescript"
   | "python"
   | "mysql"
+  | "postgresql"
   | "fastapi"
   | "next"
   | "react"
   | "vue"
   | "inertia"
   | "firebase"
-  | "laravel";
+  | "laravel"
+  | "rabbitMQ"
+  | "nuxt";
 
 export interface Project {
   id: string;
