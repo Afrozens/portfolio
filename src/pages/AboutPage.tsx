@@ -90,11 +90,8 @@ const AboutPage = () => {
               <b className="text-[#7A86B8]">PHP</b> Developer
             </h3>
             <p className="text-sm font-light text-third md:text-lg lg:text-2xl sm:border sm:border-transparent sm:border-b-gray-300 sm:pb-10">
-              Web developer with two years of experience in Javascript, Python,
-              PHP especially in: React, Next.js, Vue, Laravel, TypeScript, and
-              FastAPI. Passionate about architecture, design patterns and
-              project structure, with emphasis on solid foundations and best
-              practices for consistency. Frontend and backend.
+              Passionate about web development and creating robust and scalable technology solutions. With <b>three years of experience</b> in designing, developing and implementing web applications using modern technologies such as <b>React</b> and its core <b>Next</b> ecosystem, <b>Vue.js</b> with <b>Inertia</b> and <b>TypeScript</b> for the frontend. On the backend, I have worked with <b>Python</b> and <b>FastAPI</b>, <b>PHP</b> and <b>Laravel</b>, ensuring optimal performance and <b>clean architecture</b>.
+              I specialize in creating solid frameworks and architectures from the ground up, applying best practices to ensure consistent, maintainable and scalable projects. I am always looking to learn and adopt new technologies that allow me to deliver innovative and high quality solutions.
             </p>
           </motion.div>
           <article>

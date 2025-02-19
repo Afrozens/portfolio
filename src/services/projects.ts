@@ -4,6 +4,34 @@ import { v4 as uuid } from "uuid";
 export const projects: Project[] = [
   {
     id: uuid(),
+    title: "Aplication (web3) for mining and cryptocurrencies",
+    subTitle:
+    "Refactoring, maintenance and frontend development of this web3 orchestrated application. Connection of apis, authentication, and data management in the dashboard of both the administrator and users.",
+    link: "https://racha.network/",
+    stack: [
+      "javascript",
+      "typescript",
+      "react",
+      "next",
+    ],
+    preview: "https://i.imgur.com/eCku0vH.png",
+  },
+  {
+    id: uuid(),
+    title: "Aplication for medications delivery and management",
+    subTitle:
+    "Frontend and backend development (later migrated to Nest) in Nuxt, as well as extensively connecting apis for automated management of sending crucial health information of users to private apis, in order to connect doctors, pharmacies and the user.",
+    link: "https://hombrex.com/",
+    stack: [
+      "javascript",
+      "typescript",
+      "vue",
+      "nuxt",
+    ],
+    preview: "https://i.imgur.com/HyQ3SCA.png",
+  },
+  {
+    id: uuid(),
     title: "Aplication for travels",
     subTitle:
     "Development of frontend and backend business logic, role management, JWT based authentication, administrative and management system for agencies, travel contact interfaces for users and administrative system for super users, stripe management, handling of various rendering patterns and design for smooth operation with Clean Arquitecture.",
@@ -17,7 +45,21 @@ export const projects: Project[] = [
       "next",
       "fastapi",
     ],
-    preview: "https://i.imgur.com/Cljs1Rs.png",
+    preview: "https://i.imgur.com/N7Y1LPM.png",
+  },
+  {
+    id: uuid(),
+    title: "Aplication for escorts",
+    subTitle:
+    "Frontend development from scratch of an application for escorts.",
+    link: "#",
+    stack: [
+      "javascript",
+      "typescript",
+      "react",
+      "next",
+    ],
+    preview: "https://i.imgur.com/xJiPfuF.png",
   },
   {
     id: uuid(),

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { v4 as uuid } from "uuid";
 import deployIcon from "@/assets/icons/deploy.svg";
 import { Project } from "@/interfaces";
@@ -7,17 +7,23 @@ import { Image } from 'antd';
 
 type PropsTypes = {
   project: Project;
+  index: number
 };
 
-const CardProject = ({ project }: PropsTypes) => {
+const CardProject = ({ project, index }: PropsTypes) => {
   const [imageLoading, setImageLoading] = useState(true);
 
   const imageLoaded = () => {
     setTimeout(() => setImageLoading(false), 400);
   };
 
+  const isIndexBetween5And11 = useMemo(() => {
+    return index >= 5 && index <= 11;
+  }, [index]);
+
+
   return (
-    <li className="w-full h-full mt-4 flex flex-col justify-center items-center md:flex-row md:gap-10 md:h-96">
+    <li style={{ height: `${isIndexBetween5And11 ? '600px' : '100%'}` }} className={`w-full flex flex-col justify-center items-center md:flex-row md:gap-10 md:h-96 `}>
       <div className="w-full h-3/4 bg-transparent flex items-start justify-end md:h-full">
         <Image
           src={project.preview}
@@ -26,7 +32,7 @@ const CardProject = ({ project }: PropsTypes) => {
           onLoad={imageLoaded}
         />
       </div>
-      <div className="flex justify-around items-center md:items-start m-5 w-full flex-col">
+      <div className="flex justify-around items-start md:items-start m-5 mt-0 w-full flex-col mb-auto">
         <span className="my-2 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl text-center md:text-start">
           {project.title}
         </span>

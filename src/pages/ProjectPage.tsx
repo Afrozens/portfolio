@@ -16,13 +16,13 @@ const ProjectsPage = () => {
           Recent Projects
         </h2>
         <motion.ul
-          className="flex flex-wrap w-full gap-4 md:gap-12"
+          className="flex flex-wrap h-fit w-full gap-4 md:gap-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, scale: 0.9 }}
           transition={{ duration: 0.5 }}
         >
-          {projects.map((project) => (
-            <CardProject project={project} key={project.id} />
+          {projects.map((project, index) => (
+            <CardProject index={index} project={project} key={project.id} />
           ))}
         </motion.ul>
       </section>
