@@ -1,8 +1,10 @@
-import { experiences } from "@/services";
-import { CardExperience, ViewPdf } from "@/components";
-import LinkedinIcon from "@/assets/icons/linkedin.svg";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { experiences } from "@/services";
+import { CardExperience, ViewPdf } from "@/components";
+import VenezuelaFlag from "@/assets/venezuela.webp";
+import PanamaFlag from "@/assets/panama.webp";
+import LinkedinIcon from "@/assets/icons/linkedin.svg";
 
 const AboutPage = () => {
   const [isViewPdf, setIsViewPdf] = useState<boolean>(false);
@@ -53,25 +55,27 @@ const AboutPage = () => {
               <li>Vue</li>
               <li>React</li>
               <li>Nextjs</li>
-              <li>Laravel</li>
               <li>FastApi</li>
-              <li>Sockets</li>
-              <li>Inertia</li>
-              <li>SQL</li>
-              <li>Tailwind</li>
-              <li>Gsap & Framer Motion</li>
-              <li>Patterns Arquitectures</li>
+              <li>Laravel</li>
             </ul>
           </article>
-          <article className="ml-4 sm:ml-0 sm:mt-4">
+          <article>
             <h3 className="font-bold text-lg pb-2 border border-transparent border-b-slate-300 inline-block md:text-2xl">
-              Tools and others:
+              More:
             </h3>
-            <ul className="flex flex-wrap flex-col gap-2 pt-2 text-third font-light text-sm list-disc list-inside md:text-lg">
-              <li>Responsive web design</li>
-              <li>Testing</li>
-              <li>Git</li>
-              <li>Wordpress</li>
+            <ul className="whitespace-pre flex flex-wrap flex-col gap-2 pt-2 text-third font-light text-sm list-disc list-inside md:text-lg">
+              <li>AWS</li>
+              <li>SQL (PostgreSQL)</li>
+              <li>NoSQL (MongoDB)</li>
+              <li>RAG</li>
+              <li>Agent IA</li>
+              <li>Module Federation</li>
+              <li>Sockets</li>
+              <li>Inertia</li>
+              <li>Patterns Arquitectures</li>
+              <li>Datadog</li>
+              <li>Jenkins</li>
+              <li>Gsap & Framer Motion</li>
             </ul>
           </article>
         </motion.div>
@@ -82,7 +86,9 @@ const AboutPage = () => {
             transition={{ duration: 0.5 }}
           >
             <h2 className="font-bold text-7xl tracking-[-0.3rem] lg:text-8xl pt-4">
-              Jesús Chacón
+              Jesús Chacón{" "}
+              <img src={VenezuelaFlag} alt="venezuela flag" className="inline w-8 h-8 md:w-20 md:h-12" />{"/"}
+              <img src={PanamaFlag} alt="panama flag" className="inline w-8 h-8 md:w-20 md:h-12" />
             </h2>
             <h3 className="font-semibold text-2xl tracking-widest my-4 md:text-3xl">
               <b className="text-javascript">Javascript</b>
@@ -90,8 +96,10 @@ const AboutPage = () => {
               <b className="text-[#7A86B8]">PHP</b> Developer
             </h3>
             <p className="text-sm font-light text-third md:text-lg lg:text-2xl sm:border sm:border-transparent sm:border-b-gray-300 sm:pb-10">
-              Passionate about web development and creating robust and scalable technology solutions. With <b>three years of experience</b> in designing, developing and implementing web applications using modern technologies such as <b>React</b> and its core <b>Next</b> ecosystem, <b>Vue.js</b> with <b>Inertia</b> and <b>TypeScript</b> for the frontend. On the backend, I have worked with <b>Python</b> and <b>FastAPI</b>, <b>PHP</b> and <b>Laravel</b>, ensuring optimal performance and <b>clean architecture</b>.
-              I specialize in creating solid frameworks and architectures from the ground up, applying best practices to ensure consistent, maintainable and scalable projects. I am always looking to learn and adopt new technologies that allow me to deliver innovative and high quality solutions.
+              With over 3 years of experience in the industry, I have worked across the entire spectrum of software development—from frontend and backend architectures to advanced AI integration and large-scale system design. This diverse experience has shaped my approach to creating clean, high-performance, and truly scalable technology solutions.
+              <br />
+              <br />
+              Currently, I focus on the intersection of AI (RAG systems, agents, data enrichment), software architecture, and end-to-end development—building solid, maintainable foundations that allow products to evolve with confidence from the very beginning.
             </p>
           </motion.div>
           <article>

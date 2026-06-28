@@ -12,7 +12,13 @@ export type typeStack =
   | "firebase"
   | "laravel"
   | "rabbitMQ"
-  | "nuxt";
+  | "nuxt"
+  | "nest"
+  | "mongodb"
+  | "llm"
+  | "liquid"
+  | "langgraph"
+  | "shopify";
 
 export interface Project {
   id: string;

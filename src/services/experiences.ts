@@ -2,10 +2,34 @@ import { v4 as uuid } from "uuid";
 import { Experience } from "@/interfaces/Experience";
 
 export const experiences: Experience[] = [
+    {
+    id: uuid(),
+    title: 'Software Developer - Nacer Digital',
+    date: '2026 May - Currently',
+    description: 'Development of an administrative web/mobile application for the advertising market, specifically for managing billboards and other forms of advertising (wall displays, LED screens, etc.). Development of modules using RAG and LLM for an application used for learning English with artificial intelligence. Development of modules for a job search application specifically targeting Latin American talent specializing in AI. Development of an application using RAG (Chunk Late) and token embedding to manage information related to bank loans.'
+  },
+  {
+    id: uuid(),
+    title: 'Software Developer - Contractor (Lucid Motors, Swap Ecommerce, Discoverist, GENERAL Inc [Fujitsu General])',
+    date: ' 2025 Jul - 2026 May',
+    description: 'Development of modules handling the view and view logic, orchestrated using micro-frontends (Build Time Integration – Packages, and in other applications using a Single SPA as the orchestrator with Module Federation as the code-loading mechanism). \n\n Development and implementation of solutions on AWS using services such as Lambda, ECS, EC2, and Fargate.  \n\n Participation in the centralization of observability using DataDog and AWS Lambda Forwarder for applications on AWS Fargate, contributing to the standardization of logs (JSON) and the automation of metrics.\n\nBuilding CI/CD pipelines with AWS CDK for projects, integrating CodePipeline, CodeArtifact, and IAM permission management. \n\nDevelopment of an automated product enrichment system using Python, FastAPI, and MongoDB \n\n Implemented image processing using AI models (BLIP, CLIP) for the automatic generation of descriptions and ALT tags. \n\nCreated data pipelines for transforming and loading product catalogs from multiple CSV sources. \n\nIntegrated with OpenAI GPT and LangChain to generate SEO-optimized content and product metadata'
+  },
+  {
+    id: uuid(),
+    title: 'Software Developer - MOA Travel',
+    date: ' 2024 Mar - 2026 Ene',
+    description: 'Development of a web application for managing agencies and users in the booking of trips and activities, as well as the operational logic for the administrative side to manage and monitor users and agencies'
+  },
+  {
+    id: uuid(),
+    title: 'Software Developer - Simplified Practice',
+    date: ' 2025 Abr - 2025 Jul',
+    description: 'Development of view logic and maintenance of Shopify store modules, as well as theme creation using Liquid. (Four Seasons, Clean Program) Development of a web application with client-side socket communication built using Vue.'
+  },
   {
     id: uuid(),
     title: "Software Developer - Exceptia",
-    date: "2024 Ago - Current",
+    date: "2024 Ago - 2025 Mar",
     description: "Development and maintenance of web application (WEB3) on the frontend side, related to mining and cryptocurrencies. Development and orchestration of web application structure related to dating and escorts."
   },
   {

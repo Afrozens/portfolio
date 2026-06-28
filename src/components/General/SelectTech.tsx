@@ -2,7 +2,7 @@ import { typeStack } from "@/interfaces";
 import React from "react";
 
 const SelectTech = ({ stack }: { stack: typeStack }) => {
-  const techActions = {
+  const techActions: Partial<Record<typeStack, string>> = {
     javascript: "/tech/javascript.png",
     typescript: "/tech/typescript.png",
     python: "/tech/python.svg",
@@ -16,14 +16,18 @@ const SelectTech = ({ stack }: { stack: typeStack }) => {
     firebase: "/tech/firebase.png",
     nuxt: "/tech/nuxt.png",
     postgresql: "/tech/postgresql.png",
-    rabbitMQ: "/tech/rabbitMQ.png"
+    rabbitMQ: "/tech/rabbitMQ.png",
+    llm: "/tech/llm.jpg",
+    langgraph: "/tech/langgraph.png",
+    nest: "/tech/nest.jpg",
+    mongodb: "/tech/mongodb.png",
   };
   return (
     <div className="w-10 h-10 ">
       <img
         className="bg-cover w-full h-full"
-        src={techActions[stack]}
-        alt={techActions[stack]}
+        src={techActions[stack] ?? ""}
+        alt={techActions[stack] ?? ""}
       />
     </div>
   );
