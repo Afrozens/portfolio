@@ -1,11 +1,10 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { v4 as uuid } from "uuid";
 import deployIcon from "@/assets/icons/deploy.svg";
 import { Project } from "@/interfaces";
 import SelectTech from "./SelectTech";
-import { Image } from 'antd';
+
 
 type PropsTypes = {
   project: Project;
@@ -13,9 +12,8 @@ type PropsTypes = {
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 60, filter: "blur(15px)" },
+  hidden: { y: 60, filter: "blur(4px)" },
   visible: {
-    opacity: 1,
     y: 0,
     filter: "blur(0px)",
     transition: { duration: 0.5 },
@@ -33,19 +31,19 @@ const CardProject = ({ project, index }: PropsTypes) => {
     >
       <div className={`w-full md:w-1/2 ${isReversed ? "md:order-2" : ""}`}>
         <div className="w-full h-56 md:h-80 rounded-xl bg-gray-200 overflow-hidden">
-          <Image
+          <img
             src={project.preview}
             alt={`${project.title}${t("projects.imageOf")}`}
             className="w-full h-full object-cover object-center shadow-lg"
-            preview={false}
+            loading="lazy"
           />
         </div>
       </div>
-      <div className={`w-full md:w-1/2 flex flex-col justify-center mt-4 md:mt-0 ${isReversed ? "md:order-1 md:pr-10" : "md:pl-10"}`}>
+      <div className={`w-full md:w-1/2 flex flex-col justify-center mt-4 md:mt-0 px-4 md:px-0 ${isReversed ? "md:order-1 md:pr-10" : "md:pl-10"}`}>
         <span className="inline-block text-primary text-xs font-bold tracking-[0.15em] uppercase mb-2">
           {String(index + 1).padStart(2, "0")}
         </span>
-        <span className="text-2xl font-extrabold leading-tight tracking-tight text-gray-900 md:text-3xl mb-3">
+        <span className="text-2xl font-extrabold leading-tight tracking-tight text-gray-900 md:text-3xl mb-3 break-words">
           {project.title}
         </span>
         <div className="flex flex-wrap gap-2 mb-4">
@@ -53,7 +51,7 @@ const CardProject = ({ project, index }: PropsTypes) => {
             <SelectTech stack={tech} key={uuid()} />
           ))}
         </div>
-        <p className="text-sm font-light text-gray-600 leading-relaxed mb-4 line-clamp-4">
+        <p className="text-sm font-light text-gray-600 leading-relaxed mb-4 line-clamp-4 break-words">
           {project.subTitle}
         </p>
         {project.link && (
