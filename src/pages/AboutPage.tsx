@@ -37,10 +37,10 @@ const AboutPage = () => {
       </aside>
       <section
         id="about"
-        className=" w-full bg-third flex flex-col items-center p-10 text-primary py-14 px-10 sm:px-20 sm:py-4 sm:flex-row sm:items-start  mb-6 overflow-hidden gap-10 md:gap-0"
+        className=" w-full bg-third flex flex-col items-center py-14 text-primary px-6 sm:px-20 sm:py-4 sm:flex-row sm:items-start  mb-6 overflow-hidden gap-10 md:gap-0"
       >
         <motion.div
-          className="flex w-full relative mb-4 shrink-0 justify-center sm:w-[33%] sm:flex-col sm:justify-start md:pr-10"
+          className="flex flex-col w-full relative mb-4 shrink-0 items-center sm:items-start sm:w-[33%] sm:justify-start md:pr-10"
           initial={{ opacity: 0, x: "-100%", filter: "blur(20px)" }}
           whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.6, delay: 0.5 }}
@@ -110,7 +110,7 @@ const AboutPage = () => {
             whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-bold text-7xl tracking-[-0.3rem] lg:text-8xl pt-4">
+            <h2 className="font-bold text-3xl sm:text-7xl lg:text-8xl tracking-[-0.1rem] sm:tracking-[-0.3rem] pt-4">
               Jesús Chacón{" "}
               <img src={VenezuelaFlag} alt={t("about.venezuelaAlt")} className="inline w-8 h-8 md:w-20 md:h-12" />{"/"}
               <img src={PanamaFlag} alt={t("about.panamaAlt")} className="inline w-8 h-8 md:w-20 md:h-12" />

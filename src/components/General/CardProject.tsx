@@ -32,11 +32,14 @@ const CardProject = ({ project, index }: PropsTypes) => {
       variants={itemVariants}
     >
       <div className={`w-full md:w-1/2 ${isReversed ? "md:order-2" : ""}`}>
-        <Image
-          src={project.preview}
-          alt={`${project.title}${t("projects.imageOf")}`}
-          className="w-full h-64 md:h-80 object-cover object-center rounded-xl shadow-lg"
-        />
+        <div className="w-full h-56 md:h-80 rounded-xl bg-gray-200 overflow-hidden">
+          <Image
+            src={project.preview}
+            alt={`${project.title}${t("projects.imageOf")}`}
+            className="w-full h-full object-cover object-center shadow-lg"
+            preview={false}
+          />
+        </div>
       </div>
       <div className={`w-full md:w-1/2 flex flex-col justify-center mt-4 md:mt-0 ${isReversed ? "md:order-1 md:pr-10" : "md:pl-10"}`}>
         <span className="inline-block text-primary text-xs font-bold tracking-[0.15em] uppercase mb-2">
