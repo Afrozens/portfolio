@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Dispatch } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
 type PropsType = {
@@ -25,6 +26,7 @@ const variants = {
 };
 
 const Navbar = ({ isOpen, setIsOpen }: PropsType) => {
+  const { t } = useTranslation();
   return (
     <motion.nav
       className="w-full h-full px-16 pt-32 fixed top-0 right-0 bg-white flex flex-col  gap-4 shadow-md sm:w-72 sm:h-96 sm:absolute sm:right-6 sm:top-4 sm:p-8 sm:pt-16 z-[90]"
@@ -42,28 +44,28 @@ const Navbar = ({ isOpen, setIsOpen }: PropsType) => {
       >
         <li className="hover:scale-110 transition cursor-pointer">
           <Link to="/" spy={true} smooth={true} offset={-100} duration={300}>
-            Home
+            {t("nav.home")}
           </Link>
         </li>
         <li className="hover:scale-110 transition cursor-pointer">
           <Link to="about" spy={true} smooth={true} offset={-100} duration={300}>
-            About
+            {t("nav.about")}
           </Link>
         </li>
         <li className="hover:scale-110 transition cursor-pointer">
           <Link to="projects" spy={true} smooth={true} offset={-100} duration={300}>
-            Projects
+            {t("nav.projects")}
           </Link>
         </li>
         <li className="hover:scale-110 transition cursor-pointer">
           <Link to="contact" spy={true} smooth={true} offset={-100} duration={300}>
-            Contacts
+            {t("nav.contacts")}
           </Link>
         </li>
       </motion.ul>
       <div className="w-full h-36">
         <h4 className="text-xl font-semibold tracking-widest uppercase text-center mb-8 sm:text-base">
-          Hello me
+          {t("nav.helloMe")}
         </h4>
         <motion.ul
           className="w-full h-36 mb-8 flex flex-col gap-4 font-light text-sm tracking-widest"

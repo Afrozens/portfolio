@@ -1,0 +1,224 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contacts": "Contacto",
+    "helloMe": "Hola"
+  },
+  "banner": {
+    "text": "Honrando a las víctimas del terremoto de magnitud 7.5 y 7.2 que azotó La Guaira, Venezuela el 24 de junio de 2026.",
+    "news": "Ver noticia",
+    "donate": "Donar aquí"
+  },
+  "hero": {
+    "line1": "Hola, soy",
+    "line2": "Software",
+    "line3": "Desarrollador 💻",
+    "badge": "3+ años de experiencia",
+    "subtitle": "Creando experiencias digitales excepcionales con tecnologías modernas. Especializado en integración de IA, arquitectura escalable y código limpio.",
+    "arrowAlt": "flecha de scroll"
+  },
+  "terminal": {
+    "output1": "Jesús Chacón — Desarrollador de Software",
+    "output2a": "· Pipelines de IA (RAG, Agentes, LLM)",
+    "output2b": "· Micro-frontends & Module Federation",
+    "output2c": "· Arquitectura & Código Limpio",
+    "output3": "  Typescript · React · Vue · RAG · Python · AWS",
+    "status": "✦ Construyendo sistemas inteligentes que escalan"
+  },
+  "personalProjects": {
+    "title": "Proyectos Personales",
+    "projectTitle": "Pipeline Data RAG LLM",
+    "description": "Un pipeline inteligente basado en LangGraph + LLM (GPT-4 o GPT-mini) que recibe archivos Excel con datos de viajes de agencias en varios formatos y los consolida en un esquema centralizado (TripRecord). Un pipeline orquestado con LangGraph que: detecta automáticamente el formato de entrada mediante LLM, mapea las columnas detectadas al esquema unificado, transforma y limpia los datos, valida la integridad de los datos y persiste el resultado en múltiples destinos (JSON, MongoDB, respuesta API).",
+    "viewOnGithub": "Ver en GitHub"
+  },
+  "about": {
+    "technologies": "Tecnologías:",
+    "more": "Más:",
+    "mediumLabel": "También escribo en Medium",
+    "mediumTitle": "Encapsulación de Servicios con Clases en el Frontend",
+    "currentlyReading": "Leyendo actualmente",
+    "view": "Ver",
+    "cv": " CV",
+    "experience": "Experiencia",
+    "and": "y",
+    "developer": "Desarrollador",
+    "linkedinAlt": "icono de linkedin heroicon",
+    "venezuelaAlt": "bandera de venezuela",
+    "panamaAlt": "bandera de panamá",
+    "bio": "Con más de 3 años de experiencia en la industria, he trabajado en todo el espectro del desarrollo de software — desde arquitecturas frontend y backend hasta integración avanzada de IA y diseño de sistemas a gran escala. Esta experiencia diversa ha moldeado mi enfoque para crear soluciones tecnológicas limpias, de alto rendimiento y verdaderamente escalables.\n\nActualmente, me enfoco en la intersección de IA (sistemas RAG, agentes, enriquecimiento de datos), arquitectura de software y desarrollo integral — construyendo bases sólidas y mantenibles que permiten que los productos evolucionen con confianza desde el principio."
+  },
+  "projects": {
+    "work": "Trabajo",
+    "recentProjects": "Proyectos Recientes",
+    "deploy": "Desplegar",
+    "imageOf": " imagen",
+    "arrowAlt": "icono de flecha hacia arriba"
+  },
+  "contact": {
+    "copyright": "© 2024 JesusChacon™",
+    "github": "Github",
+    "linkedin": "Linkedin",
+    "githubAlt": "logotipo icono de github",
+    "linkedinAlt": "logotipo icono de linkedin"
+  },
+  "ui": {
+    "up": "subir",
+    "exitPdf": "Salir PDF"
+  },
+  "experiences": [
+    {
+      "title": "Desarrollador de Software - Nacer Digital",
+      "date": "Mayo 2026 - Actualmente",
+      "description": "Desarrollo de una aplicación web/móvil administrativa para el mercado publicitario, específicamente para la gestión de vallas y otras formas de publicidad (muros, pantallas LED, etc.). Desarrollo de módulos usando RAG y LLM para una aplicación de aprendizaje de inglés con inteligencia artificial. Desarrollo de módulos para una aplicación de búsqueda de empleo dirigida específicamente a talento latinoamericano especializado en IA. Desarrollo de una aplicación usando RAG (Chunk Late) y token embedding para gestionar información relacionada con préstamos bancarios."
+    },
+    {
+      "title": "Desarrollador de Software - Contratista (Lucid Motors, Swap Ecommerce, Discoverist, GENERAL Inc [Fujitsu General])",
+      "date": "Jul 2025 - May 2026",
+      "description": "Desarrollo de módulos manejando la vista y la lógica de vista, orquestados usando micro-frontends (Build Time Integration – Packages, y en otras aplicaciones usando Single SPA como orquestador con Module Federation como mecanismo de carga de código).\n\nDesarrollo e implementación de soluciones en AWS usando servicios como Lambda, ECS, EC2 y Fargate.\n\nParticipación en la centralización de observabilidad usando DataDog y AWS Lambda Forwarder para aplicaciones en AWS Fargate, contribuyendo a la estandarización de logs (JSON) y la automatización de métricas.\n\nConstrucción de pipelines CI/CD con AWS CDK para proyectos, integrando CodePipeline, CodeArtifact y gestión de permisos IAM.\n\nDesarrollo de un sistema automatizado de enriquecimiento de productos usando Python, FastAPI y MongoDB.\n\nImplementación de procesamiento de imágenes usando modelos de IA (BLIP, CLIP) para la generación automática de descripciones y etiquetas ALT.\n\nCreación de pipelines de datos para transformar y cargar catálogos de productos desde múltiples fuentes CSV.\n\nIntegración con OpenAI GPT y LangChain para generar contenido optimizado para SEO y metadatos de productos."
+    },
+    {
+      "title": "Desarrollador de Software - MOA Travel",
+      "date": "Mar 2024 - Ene 2026",
+      "description": "Desarrollo de una aplicación web para la gestión de agencias y usuarios en la reserva de viajes y actividades, así como la lógica operativa para el lado administrativo para gestionar y monitorear usuarios y agencias."
+    },
+    {
+      "title": "Desarrollador de Software - Simplified Practice",
+      "date": "Abr 2025 - Jul 2025",
+      "description": "Desarrollo de lógica de vista y mantenimiento de módulos de tiendas Shopify, así como creación de temas usando Liquid. (Four Seasons, Clean Program) Desarrollo de una aplicación web con comunicación por sockets del lado del cliente construida con Vue."
+    },
+    {
+      "title": "Desarrollador de Software - Exceptia",
+      "date": "Ago 2024 - Mar 2025",
+      "description": "Desarrollo y mantenimiento de aplicación web (WEB3) en el lado del frontend, relacionada con minería y criptomonedas. Desarrollo y orquestación de estructura de aplicación web relacionada con citas y acompañantes."
+    },
+    {
+      "title": "Desarrollador de Software - MOA Travel",
+      "date": "Mar 2024 - Actualmente",
+      "description": "Desarrollo de una aplicación web para la gestión de agencias y usuarios para la contratación de viajes y actividades, además de la lógica de operación en la parte administrativa para la gestión y control de usuarios/agencias."
+    },
+    {
+      "title": "Desarrollador de Software - Simplified Practice",
+      "date": "Jun 2024 - Sept 2024",
+      "description": "Desarrollo de aplicación web principalmente para la venta de medicamentos (específicos), transmitiendo datos de usuario a APIs específicas para la comunicación de médicos y farmacias, para una gestión automatizada de datos y envíos. Manejo de diferentes librerías para el proceso de pago, así como un cron para el manejo de suscripciones de pago con Card Connect."
+    },
+    {
+      "title": "Desarrollador de Software - NextStation",
+      "date": "Mar 2024 - May 2024",
+      "description": "Desarrollo de una aplicación para la gestión de entidades además del control, monitoreo y comportamiento laboral. Desarrollo con FastApi y PostgreSQL en el lado del servidor, además del uso de RabbitMQ como broker de mensajes para la comunicación de microservicios. Desarrollo con Typescript, Vue y Nuxt para el lado del cliente."
+    },
+    {
+      "title": "Desarrollador Web Independiente - Avoxus",
+      "date": "Dic 2023 - Mar 2024",
+      "description": "Desarrollo de una aplicación web con multi-pasos, gestión de roles, autenticación y autorización, uso de la API de Stripe y desarrollo de lógica de negocio. Manejo de creación de compañías LLC. Tanto Frontend como Backend."
+    },
+    {
+      "title": "Desarrollador Web Independiente - Es Mediterraneo",
+      "date": "Nov 2023 - Ene 2024",
+      "description": "Rediseño completo del Frontend de una aplicación existente con panel administrativo y dashboard de usuario, y refactorización del backend, actualización a una versión estable tanto en Vue (de Vue 2 a Vue 3) como en Laravel (de Laravel 8 a Laravel 10) e inertia."
+    },
+    {
+      "title": "Desarrollador Web - Novadeha SAS",
+      "date": "Jun 2023 - Dic 2023",
+      "description": "Refactorización y escalado de la arquitectura frontend de una aplicación compleja. Diseñó e implementó mejoras de rendimiento, escalabilidad y mantenibilidad. Refactorizó el frontend de JavaScript vanilla aplicando principios SOLID y patrones de diseño para mejorar la calidad del código. Lideró el proyecto frontend en Vue.js definiendo la arquitectura completa y estableciendo guías de desarrollo de módulos usando mejores prácticas. A cargo del mantenimiento preventivo y correctivo, integración de componentes dinámicos y reutilizables en frontend Laravel/Vue.js con Inertia.js. Experiencia en refactorización, escalado y optimización de arquitectura frontend usando Vue, JavaScript y patrones de diseño."
+    },
+    {
+      "title": "Frontend Autónomo - No Country",
+      "date": "Abr 2023 - Jun 2023",
+      "description": "Desarrollo de la lógica principal del lado del Cliente, más integraciones de Redux, resolución de problemas, integración de Server Side Rendering con Next, creación de modelos Typescript representativos de la lógica de negocio, integración de fetching en componentes del servidor y maquetación e implementación de la lógica de componentes."
+    },
+    {
+      "title": "Freelancer Frontend",
+      "date": "Abr 2023 - May 2023",
+      "description": "Desarrollo de funcionalidades para módulos específicos asignados. Usando Typescript, React y Next. Validación de formularios y asignación de captchas a formularios específicos de la aplicación. Conexión de endpoints específicos a manejadores de envío. Maquetación y corrección de layouts con Tailwind."
+    },
+    {
+      "title": "Freelancer Frontend",
+      "date": "Dic 2022 - Abr 2023",
+      "description": "Integración de JWT en el lado del cliente y manejo de estados de datos de usuario con Redux y Context, manejo de errores en la API principal con Axios Interceptor y mostrándolos en pantalla con Notistack, optimización del rendimiento de la aplicación, organización de código y desarrollo de funcionalidades como validación de formularios e implementación de Captchas (V3)."
+    }
+  ],
+  "projectCards": [
+    {
+      "title": "Tutor-AI English",
+      "subTitle": "Una plataforma de tutoría de inglés para estudiantes hispanohablantes, con tres roles: Estudiante, Profesor y Administrador. La propuesta de valor principal es que los estudiantes practican inglés conversacional con IA, recibiendo correcciones gramaticales en tiempo real y retroalimentación estructurada. GPT-4 o GPT-4 Mini (por defecto). Cada función tiene su propio constructor de prompts especializado (6 constructores) que incorpora reglas de negocio, el modo de idioma del estudiante y el historial contextual. Pipeline de 4 etapas — generación de contenido → inicio de intención → respuestas del estudiante → extracción + evaluación + XP."
+    },
+    {
+      "title": "ZazaCorp",
+      "subTitle": "Una plataforma para gestionar inventario de publicidad exterior (vallas, pantallas digitales, paradas de autobús, kioscos publicitarios, etc.) y coordinar el trabajo de campo entre ejecutivos de cuentas y agentes de campo."
+    },
+    {
+      "title": "Swap Ecommerce",
+      "subTitle": "Módulos para autenticación de frontend y storefront; embeddings semánticos (búsqueda vectorial), búsqueda híbrida (palabras clave + semántica) y reordenamiento, usando PostgreSQL con pgvector y Vertex AI. Un pipeline impulsado por eventos vía Pub/Sub que genera automáticamente descripciones visuales, texto alternativo, filtros y embeddings (texto e imagen)."
+    },
+    {
+      "title": "Discoverist",
+      "subTitle": "Un backend de IA para comercio electrónico que actúa como middleware entre tiendas Shopify y múltiples servicios de IA. Su núcleo es un pipeline de enriquecimiento de catálogo: importa productos desde Shopify, CSV, FTP o URLs, los procesa con OpenAI para generar descripciones optimizadas, metadatos SEO, títulos para Amazon/Google/eBay/Instagram, etiquetas inteligentes y taxonomía. Gestiona una base de conocimiento de marca con embeddings vectoriales en Pinecone para búsqueda semántica, crea perfiles de tono de voz y genera descuentos dinámicos en Shopify. Incluye un motor de cuestionarios, análisis de clics con Spark, widgets configurables (paquetes, pares, conjuntos, sugerencias), autenticación con AWS Cognito y manejo de webhooks compatible con GDPR. Todo construido con FastAPI asíncrono, MongoDB, despliegue serverless con Lambda y orquestación en AWS."
+    },
+    {
+      "title": "Portal Lucid Motors",
+      "subTitle": "Portal administrativo interno para Lucid Motors que permite a los gerentes de precios gestionar configuraciones de precios de vehículos (Air y Gravity) en múltiples mercados (EE.UU., Canadá, Europa, KSA, UAE), canales (B2C, B2B, B2G, B2X) y entornos (dev → stage → prod). Micro frontend usando paquetes NPM mediante composición en tiempo de compilación."
+    },
+    {
+      "title": "General Inc (Fujitsu General)",
+      "subTitle": "Desarrollo de módulos manejando la vista y la lógica de vista, orquestados usando micro-frontends (Build Time Integration – Packages; y en otras aplicaciones usando Single SPA como orquestador, con Module Federation como mecanismo de carga de código)."
+    },
+    {
+      "title": "Shop Four Seasons",
+      "subTitle": "Refactorización, mantenimiento y desarrollo de módulos de Shopify. También integración de arquitectura de temas, plantillas y esquemas usando Liquid."
+    },
+    {
+      "title": "Clean Programm",
+      "subTitle": "Refactorización y mantenimiento basado en Shopify y React."
+    },
+    {
+      "title": "Aplicación (web3) para minería y criptomonedas",
+      "subTitle": "Refactorización, mantenimiento y desarrollo frontend de esta aplicación orquestada web3. Conexión de APIs, autenticación y gestión de datos en el dashboard tanto del administrador como de los usuarios."
+    },
+    {
+      "title": "Aplicación para entrega y gestión de medicamentos",
+      "subTitle": "Desarrollo frontend y backend (posteriormente migrado a Nest) en Nuxt, así como conexión extensiva de APIs para la gestión automatizada del envío de información crítica de salud de usuarios a APIs privadas, para conectar médicos, farmacias y el usuario."
+    },
+    {
+      "title": "MOA Travels - Aplicación para viajes",
+      "subTitle": "Desarrollo de lógica de negocio frontend y backend, gestión de roles, autenticación basada en JWT, sistema administrativo y de gestión para agencias, interfaces de contacto de viajes para usuarios y sistema administrativo para superusuarios, gestión de Stripe, manejo de varios patrones de renderizado y diseño para operación fluida con Arquitectura Limpia."
+    },
+    {
+      "title": "Aplicación para acompañantes",
+      "subTitle": "Desarrollo frontend desde cero de una aplicación para acompañantes."
+    },
+    {
+      "title": "Aplicación para el control, monitoreo y organización de empresas",
+      "subTitle": "Desarrollo de lógica de negocio frontend y backend (microservicios), gestión de roles, autenticación basada en JWT, sistema administrativo y de gestión para empresas así como sucursales y divisiones de las empresas. Gestión de pagos, integración de sistema de monitoreo y control de tareas de empleados, manejo de varios patrones de renderizado y diseño para operación fluida con Arquitectura Limpia."
+    },
+    {
+      "title": "Dashboard y aplicación para creación de compañías LLC",
+      "subTitle": "Desarrollo de lógica de negocio frontend y backend, gestión de roles, autenticación basada en JWT, registro multi-paso y gestión de Stripe, manejo de varios patrones de renderizado y diseño para operación fluida teniendo en cuenta Arquitectura Limpia."
+    },
+    {
+      "title": "Dashboard y aplicación para manejo de recetas de comida",
+      "subTitle": "Refactorización total de Vue 2 y Laravel 8 a Vue 3 y Laravel 10, cambio de Vuetify a componentes desde cero, cambios en la estructuración tanto en backend como frontend; separación de lógica de vista, con lógica de negocio y vista en frontend y UX mejorada."
+    },
+    {
+      "title": "CRM - Dashboard para gestión de Mercado",
+      "subTitle": "Desarrollo frontend usando la filosofía 'Atomic Design', separando vista, lógica de vista y lógica de negocio, adaptándose a la arquitectura modular de Laravel. Apoyándose en patrones de diseño y renderizado para el correcto funcionamiento y rendimiento, aproximadamente 20 filtros por módulo generados dinámicamente."
+    },
+    {
+      "title": "Chat Empresarial con Sockets (Proxy y Observer)",
+      "subTitle": "Desarrollo de un chat para un CRM teniendo en cuenta que el proyecto estaba en Javascript Vanilla y se buscaba tener una estructura basada en patrones para tener un código organizado y funcional, el chat con carga de imágenes y documentos, vinculación con Twilio para enviar copias por SMS y Whatsapp."
+    },
+    {
+      "title": "'Cotizador bolívares'",
+      "subTitle": "Desarrollo de un motor de cotización teniendo en cuenta la arquitectura y estructuración, el uso de Typescript y el correcto manejo de la lógica de vista y caché."
+    },
+    {
+      "title": "Burofy",
+      "subTitle": "Desarrollo de una aplicación usando patrones de renderizado además del uso de interfaces y/o tipos generados con typescript y teniendo en cuenta el 'Atomic Design'."
+    },
+    {
+      "title": "Arrow Music",
+      "subTitle": "Landing Page teniendo en cuenta la organización y estructuración con CSS vanilla sin usar tecnologías basadas en esto, además teniendo en cuenta la filosofía de 'código minimalista'."
+    }
+  ]
+}

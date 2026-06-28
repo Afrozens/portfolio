@@ -20,10 +20,11 @@ const AnimatedTextWord = ({ line1, line2, line3, classText }: PropsType) => {
   };
 
   const letter = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 50, filter: "blur(20px)" },
     visible: {
       opacity: 1,
       y: 0,
+      filter: "blur(0px)",
     },
   };
 

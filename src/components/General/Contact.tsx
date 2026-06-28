@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <section className="flex flex-wrap md:flex-nowrap justify-center">
       <article className="flex flex-wrap ">
@@ -10,7 +13,7 @@ const Contact = () => {
               </button>
             </div>
             <div className="grow ml-6">
-              <p className="font-bold mb-1">Linkedin</p>
+              <p className="font-bold mb-1">{t("contact.linkedin")}</p>
               <p className="text-gray-500">Jesus Chacon</p>
             </div>
           </div>
@@ -23,7 +26,7 @@ const Contact = () => {
               </button>
             </div>
             <div className="grow ml-6">
-              <p className="font-bold mb-1">Github</p>
+              <p className="font-bold mb-1">{t("contact.github")}</p>
               <p className="text-gray-500">Afrozens</p>
             </div>
           </div>

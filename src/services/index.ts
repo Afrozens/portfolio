@@ -1,2 +1,2 @@
-export * from './experiences';
-export * from './projects';
+export { getExperiences } from './experiences';
+export { getProjects } from './projects';

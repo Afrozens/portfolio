@@ -1,0 +1,224 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contacts": "Contacts",
+    "helloMe": "Hello me"
+  },
+  "banner": {
+    "text": "Honoring the victims of the 7.5 and 7.2 earthquake that struck La Guaira, Venezuela on June 24, 2026.",
+    "news": "View news",
+    "donate": "Donate here"
+  },
+  "hero": {
+    "line1": "Hi, I'm",
+    "line2": "Software",
+    "line3": "Developer 💻",
+    "badge": "3+ years of experience",
+    "subtitle": "Building exceptional digital experiences with modern technologies. Specialized in AI integration, scalable architecture, and clean code.",
+    "arrowAlt": "arrow scroll"
+  },
+  "terminal": {
+    "output1": "Jesús Chacón — Software Developer",
+    "output2a": "· AI Pipelines (RAG, Agents, LLM)",
+    "output2b": "· Micro-frontends & Module Federation",
+    "output2c": "· Architecture & Clean Code",
+    "output3": "  Typescript · React · Vue · RAG · Python · AWS",
+    "status": "✦ Building intelligent systems that scale"
+  },
+  "personalProjects": {
+    "title": "Personal Projects",
+    "projectTitle": "Pipeline Data RAG LLM",
+    "description": "A smart pipeline based on LangGraph + LLM (GPT-4 or GPT-mini) that receives Excel files containing travel data from agencies in various formats and consolidates them into a centralized schema (TripRecord). A pipeline orchestrated with LangGraph that: automatically detects the input format via LLM, maps the detected columns to the unified schema, transforms and cleans the data, validates data integrity, and persists the result to multiple destinations (JSON, MongoDB, API response).",
+    "viewOnGithub": "View on GitHub"
+  },
+  "about": {
+    "technologies": "Technologies:",
+    "more": "More:",
+    "mediumLabel": "I also write on Medium",
+    "mediumTitle": "Encapsulation of Services with Classes in the Frontend",
+    "currentlyReading": "Currently reading",
+    "view": "View",
+    "cv": " CV",
+    "experience": "Experience",
+    "and": "and",
+    "developer": "Developer",
+    "linkedinAlt": "linkedin icon heroicon",
+    "venezuelaAlt": "venezuela flag",
+    "panamaAlt": "panama flag",
+    "bio": "With over 3 years of experience in the industry, I have worked across the entire spectrum of software development—from frontend and backend architectures to advanced AI integration and large-scale system design. This diverse experience has shaped my approach to creating clean, high-performance, and truly scalable technology solutions.\n\nCurrently, I focus on the intersection of AI (RAG systems, agents, data enrichment), software architecture, and end-to-end development—building solid, maintainable foundations that allow products to evolve with confidence from the very beginning."
+  },
+  "projects": {
+    "work": "Work",
+    "recentProjects": "Recent Projects",
+    "deploy": "Deploy",
+    "imageOf": " image",
+    "arrowAlt": "arrow right top icon"
+  },
+  "contact": {
+    "copyright": "© 2024 JesusChacon™",
+    "github": "Github",
+    "linkedin": "Linkedin",
+    "githubAlt": "github icon logotype",
+    "linkedinAlt": "linkedin icon logotype"
+  },
+  "ui": {
+    "up": "up",
+    "exitPdf": "Exit PDF"
+  },
+  "experiences": [
+    {
+      "title": "Software Developer - Nacer Digital",
+      "date": "2026 May - Currently",
+      "description": "Development of an administrative web/mobile application for the advertising market, specifically for managing billboards and other forms of advertising (wall displays, LED screens, etc.). Development of modules using RAG and LLM for an application used for learning English with artificial intelligence. Development of modules for a job search application specifically targeting Latin American talent specializing in AI. Development of an application using RAG (Chunk Late) and token embedding to manage information related to bank loans."
+    },
+    {
+      "title": "Software Developer - Contractor (Lucid Motors, Swap Ecommerce, Discoverist, GENERAL Inc [Fujitsu General])",
+      "date": "2025 Jul - 2026 May",
+      "description": "Development of modules handling the view and view logic, orchestrated using micro-frontends (Build Time Integration – Packages, and in other applications using a Single SPA as the orchestrator with Module Federation as the code-loading mechanism). \n\n Development and implementation of solutions on AWS using services such as Lambda, ECS, EC2, and Fargate.  \n\n Participation in the centralization of observability using DataDog and AWS Lambda Forwarder for applications on AWS Fargate, contributing to the standardization of logs (JSON) and the automation of metrics.\n\nBuilding CI/CD pipelines with AWS CDK for projects, integrating CodePipeline, CodeArtifact, and IAM permission management. \n\nDevelopment of an automated product enrichment system using Python, FastAPI, and MongoDB \n\n Implemented image processing using AI models (BLIP, CLIP) for the automatic generation of descriptions and ALT tags. \n\nCreated data pipelines for transforming and loading product catalogs from multiple CSV sources. \n\nIntegrated with OpenAI GPT and LangChain to generate SEO-optimized content and product metadata"
+    },
+    {
+      "title": "Software Developer - MOA Travel",
+      "date": "2024 Mar - 2026 Ene",
+      "description": "Development of a web application for managing agencies and users in the booking of trips and activities, as well as the operational logic for the administrative side to manage and monitor users and agencies"
+    },
+    {
+      "title": "Software Developer - Simplified Practice",
+      "date": "2025 Abr - 2025 Jul",
+      "description": "Development of view logic and maintenance of Shopify store modules, as well as theme creation using Liquid. (Four Seasons, Clean Program) Development of a web application with client-side socket communication built using Vue."
+    },
+    {
+      "title": "Software Developer - Exceptia",
+      "date": "2024 Ago - 2025 Mar",
+      "description": "Development and maintenance of web application (WEB3) on the frontend side, related to mining and cryptocurrencies. Development and orchestration of web application structure related to dating and escorts."
+    },
+    {
+      "title": "Software Developer - MOA Travel",
+      "date": "2024 Mar - Current",
+      "description": "Development of a web application for the management of agencies and users for the contracting of trips and activities, in addition to the logic of the operation in the administrative part for the management and control of the users/agencies."
+    },
+    {
+      "title": "Software Developer - Simplified Practice",
+      "date": "2024 Jun - 2024 Sept",
+      "description": "Web application development mainly for the sale of medicines (specific), transmitting user data to specific apis for the communication of doctors and pharmacies, for an automated management of data and shipments. Handling different libraries for the payment process, as well as a cron for the handling of payment subscriptions with Card Connect."
+    },
+    {
+      "title": "Software Developer - NextStation",
+      "date": "2024 Mar - 2024 May",
+      "description": "Development of an application for the management of entities in addition to the control, monitoring and work behavior. Development with FastApi and PostgreSQL on the server side, in addition to the use of RabbitMQ as message broker for the communication of micro services, Development with Typescript, Vue and Nuxt for the client side."
+    },
+    {
+      "title": "Independent Web Developer - Avoxus",
+      "date": "2023 Dec - 2024 Mar",
+      "description": "Development of a web application with multi-step, role management, authentication and authorization, use of stripe API, and business logic development. handling management of LLC company creation. Both Frontend and Backend."
+    },
+    {
+      "title": "Independent Web Developer - Es Mediterraneo",
+      "date": "2023 Nov - 2024 Jan",
+      "description": "Redesigning the Frontend from scratch of an existing application with administrative panel and user dashboard, and refactor the backend, upgrade to a stable version, stable in both Vue (from Vue 2 to Vue 3) and Laravel (from Laravel 8 to Laravel 10) and inertia."
+    },
+    {
+      "title": "Web Developer - Novadeha SAS",
+      "date": "2023 Jun - 2023 Dec",
+      "description": "Refactored and scaled frontend architecture of complex app. Designed and implemented performance, scalability and maintainability improvements. Refactored vanilla JavaScript frontend applying SOLID principles and design patterns to improve code quality. Led Vue.js frontend project defining full architecture and establishing module development guidelines using best practices. In charge of preventive and corrective maintenance, integration of dynamic and reusable components in Laravel/Vue.js frontend with Inertia.js. Experienced in refactoring, scaling and optimizing frontend architecture using Vue, JavaScript and design patterns."
+    },
+    {
+      "title": "Autonomous Frontend - No Country",
+      "date": "2023 Apr - 2023 Jun",
+      "description": "Development of the main logic on the Client side, plus Redux integrations, troubleshooting, integration of Server Side Rendering with Next, creation of Typescript models representative of the business logic, integration of fetching in server components and layout and implementation of the component logic."
+    },
+    {
+      "title": "Freelancer Frontend",
+      "date": "2023 Apr - 2023 May",
+      "description": "Develop functionalities to specific assigned modules. Using Typescript, React and Next. Validating forms and assigning captchas to specific forms of the application. Connecting specific endpoints to submit handlers. Layout and fix layouts with Tailwind."
+    },
+    {
+      "title": "Freelancer Frontend",
+      "date": "2022 Dec - 2023 Apr",
+      "description": "Integrating JWT on the client side and handling user data states with Redux and Context, handling errors in the main API with Axios Interceptor and displaying them on screen with Notistack, optimizing application performance, code organization and developing functionalities such as form validation and implementing Captchas (V3)."
+    }
+  ],
+  "projectCards": [
+    {
+      "title": "Tutor-AI English",
+      "subTitle": "An English tutoring platform for Spanish-speaking students, with three roles: Student, Teacher, and Admin. The core value proposition is that students practice conversational English with AI, receiving real-time grammar corrections and structured feedback. GPT-4 or GPT-4 Mini (default). Each feature has its own specialized prompt builder (6 builders) that incorporates business rules, the student's language mode, and contextual history. 4-stage pipeline — content generation → intent initiation → student responses → extraction + evaluation + XP."
+    },
+    {
+      "title": "ZazaCorp",
+      "subTitle": "A platform for managing outdoor advertising inventory (billboards, digital screens, bus stops, advertising kiosks, etc.) and coordinating fieldwork between account executives and field agents"
+    },
+    {
+      "title": "Swap Ecommerce",
+      "subTitle": "Modules for frontend and storefront authentication; semantic embeddings (vector search), hybrid search (keyword + semantic), and reranking, using PostgreSQL with pgvector and Vertex AI. An event-driven pipeline via Pub/Sub that automatically generates visual descriptions, alt text, filters, and embeddings (text and image)."
+    },
+    {
+      "title": "Discoverist",
+      "subTitle": "An AI backend for e-commerce that acts as middleware between Shopify stores and multiple AI services. At its core is a catalog enrichment pipeline: it imports products from Shopify, CSV, FTP, or URLs, processes them with OpenAI to generate optimized descriptions, SEO metadata, titles for Amazon/Google/eBay/Instagram, smart tags, and taxonomy. It manages a brand knowledge base with vector embeddings in Pinecone for semantic search, creates voice-tone profiles, and generates dynamic discounts in Shopify. It includes a quiz engine, clickstream analytics with Spark, configurable widgets (bundles, pairs, outfits, suggestions), authentication with AWS Cognito, and GDPR-compliant webhook handling. All built with asynchronous FastAPI, MongoDB, serverless deployment with Lambda, and orchestration on AWS."
+    },
+    {
+      "title": "Portal Lucid Motors",
+      "subTitle": "Internal administrative portal for Lucid Motors that enables pricing managers to manage vehicle pricing configurations (Air and Gravity) across multiple markets (US, Canada, Europe, KSA, UAE), channels (B2C, B2B, B2G, B2X), and environments (dev → stage → prod). Micro frontend using NPM packages via build-time composition"
+    },
+    {
+      "title": "General Inc (Fujitsu General)",
+      "subTitle": "Development of modules handling the view and view logic, orchestrated using micro-frontends (Build Time Integration – Packages; and in other applications using a Single SPA as the orchestrator, with Module Federation as the code-loading mechanism)"
+    },
+    {
+      "title": "Shop Four Seasons",
+      "subTitle": "Refactoring, maintenance, and development of Shopify modules. Also integrating theme, template, and schema architecture using liquid"
+    },
+    {
+      "title": "Clean Programm",
+      "subTitle": "Refactoring and maintenance based on Shopify and React."
+    },
+    {
+      "title": "Aplication (web3) for mining and cryptocurrencies",
+      "subTitle": "Refactoring, maintenance and frontend development of this web3 orchestrated application. Connection of apis, authentication, and data management in the dashboard of both the administrator and users."
+    },
+    {
+      "title": "Aplication for medications delivery and management",
+      "subTitle": "Frontend and backend development (later migrated to Nest) in Nuxt, as well as extensively connecting apis for automated management of sending crucial health information of users to private apis, in order to connect doctors, pharmacies and the user."
+    },
+    {
+      "title": "MOA Travels - Aplication for travels",
+      "subTitle": "Development of frontend and backend business logic, role management, JWT based authentication, administrative and management system for agencies, travel contact interfaces for users and administrative system for super users, stripe management, handling of various rendering patterns and design for smooth operation with Clean Arquitecture."
+    },
+    {
+      "title": "Aplication for escorts",
+      "subTitle": "Frontend development from scratch of an application for escorts."
+    },
+    {
+      "title": "Application for the control, monitoring and organization of companies",
+      "subTitle": "Development of frontend and backend business logic (microservices), role management, JWT based authentication, administrative and management system for companies as well as branches and divisions of the companies. Payment management, integration of employee task monitoring and control system, handling of various rendering patterns and design for smooth operation with Clean Arquitecture."
+    },
+    {
+      "title": "Dashboard and application for creation of companies LLC",
+      "subTitle": "Development of frontend and backend business logic, role management, JWT-based authentication, multi-pass registration and stripe management, handling various rendering and design patterns for smooth operation with Clean Arquitecture in mind."
+    },
+    {
+      "title": "Dashboard and application for handling food recipe",
+      "subTitle": "Total refactoring from Vue 2 and Laravel 8 to Vue 3 and Laravel 10, change from Vuetify to components from scratch, changes in structuring in both backend and frontend; separation of view logic, with business logic and view in frontend and improved UX"
+    },
+    {
+      "title": "CRM - Dashboard for Market management",
+      "subTitle": "Frontend development using the 'Atomic Design' philosophy, separating view, view logic and business logic, adapting to Laravel's modular architecture. Relying on design and rendering patterns for the proper functioning and performance, approximately 20 filters for each module generating them dynamically."
+    },
+    {
+      "title": "Business Chat with Sockets (Proxy and Observer)",
+      "subTitle": "Development of a chat for a CRM taking into account the project was in Javascript Vanilla and tried to have a structure and based on patterns to have an organized and functional code, the chat with uploading images and documents, linking with Twilio to send copies by SMS and Whatsapp."
+    },
+    {
+      "title": "'Cotizador bolivares'",
+      "subTitle": "Development of a quotation engine taking into account the architecture and structuring, the use of Typescript and the correct handling of the view logic and cache."
+    },
+    {
+      "title": "Burofy",
+      "subTitle": "Development of an application using rendering patterns in addition to the use of interfaces and/or types generated with typescript and taking into account the 'Atomic Design'."
+    },
+    {
+      "title": "Arrow Music",
+      "subTitle": "Landing Page taking into account the organization and structuring with vanilla CSS without using technologies based on this, in addition to taking into account the philosophy of 'minimalist code'."
+    }
+  ]
+}

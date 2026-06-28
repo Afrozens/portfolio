@@ -19,8 +19,10 @@ const SelectTech = ({ stack }: { stack: typeStack }) => {
     rabbitMQ: "/tech/rabbitMQ.png",
     llm: "/tech/llm.jpg",
     langgraph: "/tech/langgraph.png",
-    nest: "/tech/nest.jpg",
+    nest: "/tech/nest1.jpg",
     mongodb: "/tech/mongodb.png",
+    liquid: "/tech/shopify.png",
+    shopify: "/tech/liquid.png",
   };
   return (
     <div className="w-10 h-10 ">
