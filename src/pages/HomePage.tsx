@@ -77,7 +77,7 @@ const HomePage = () => {
         </div>
       )}
       <main id="#" className="relative sm:flex overflow-hidden">
-        <section className="h-screen w-full flex flex-col justify-center bg-teal px-8 sm:w-[58%] sm:px-16 lg:px-20">
+        <section className="h-screen w-full flex flex-col justify-center px-8 sm:w-[58%] sm:px-16 lg:px-20">
           <div className="max-w-2xl">
             <motion.span
               initial={{ opacity: 0, y: 16 }}
