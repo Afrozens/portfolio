@@ -61,7 +61,7 @@ const HomePage = () => {
   return (
     <>
       {bannerOpen && (
-        <div className="w-full border-b border-white/10 pt-32 sm:pt-8 pb-3 px-4 sm:px-8">
+        <div className="w-full z-[9999999] border-b border-white/10 pt-32 sm:pt-8 pb-3 px-4 sm:px-8">
           <div className="max-w-7xl bg-[#1a1a2e] p-5 rounded-lg mx-auto flex items-center gap-2 sm:gap-4">
             <img src={VenezuelaFlag} alt="Venezuela" className="w-10 h-7 rounded-sm shrink-0 object-cover" />
             <p className="text-xs sm:text-sm text-white/80 font-light text-center flex-1">
